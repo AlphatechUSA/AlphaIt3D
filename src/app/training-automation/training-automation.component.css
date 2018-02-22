@@ -1,0 +1,73 @@
+/*******************Training_And_inovation styles*******************/
+
+/*section of larg link buttons((training and inovation))*/
+
+.large-buttons {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(/assets/resources/img/pics/career.jpg);
+}
+
+/*links container(training and inovation)*/
+
+.large-buttons ul {
+    display: block;
+    text-align: center;
+}
+
+/*each larg link button(training and inovation)*/
+
+.large-buttons li {
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    margin: 100px 20px;
+    background-color: #1C6BA0;
+    border-radius: 20px;
+    font-weight: 600;
+    color: white;
+    transition: all 1.3s cubic-bezier(.75, .92, 0, 0);
+    cursor: pointer;
+}
+
+/*hovering affect on larg link buttons*/
+
+.large-buttons li:hover {
+    transform: scale(1.1);
+}
+
+/*******************end of Training_And_inovation styles*******************/
+@media only screen and (max-width: 2560px) {}
+
+@media only screen and (max-width: 1800px) {}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 670px) {}
+
+@media only screen and (max-width: 480px) {
+    /*each larg link button(training and inovation)*/
+    .large-buttons li {
+        width: 150px;
+        height: 150px;
+        line-height: 150px;
+        margin: 10px 0px;
+    }
+}
+
+@media only screen and (max-width: 375px) {}
+
+@media only screen and (max-width: 320px) {
+        /*each larg link button(training and inovation)*/
+        .large-buttons li {
+            width: 120px;
+            height: 120px;
+            line-height: 120px;
+            margin: 10px 0px;
+            font-size: 80%;
+        }
+}
+

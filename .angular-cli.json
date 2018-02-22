@@ -19,9 +19,19 @@
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
       "styles": [
-        "styles.css"
+        "styles.css",
+        "assets/resources/css/style.css",
+        "assets/resources/css/transitions.css",
+        "assets/resources/css/queries-style.css"
       ],
-      "scripts": [],
+      "scripts": [
+        "assets/vendors/js/Projector.js",
+        "assets/vendors/js/CanvasRenderer.js",
+        "assets/vendors/js/stats.min.js",
+        "assets/vendors/js/bgthreed.js",
+        "assets/resources/js/script.js",
+        "assets/resources/js/step-by-step-boxes.js"
+      ],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",

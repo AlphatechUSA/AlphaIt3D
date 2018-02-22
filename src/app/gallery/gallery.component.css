@@ -1,0 +1,114 @@
+@media only screen and (max-width: 2560px) {
+    /* container of folders of same category */
+    .immage-boxes:before {
+        display: block;
+        width: 70%;
+        content: " ";
+        margin: 10px auto;
+        border-top: 1px solid #dbdbdb;
+    }
+    /* container of each folder */
+    .immage-boxes .box:hover {
+        background: linear-gradient(white, rgba(185, 185, 185, 0.46));
+    }
+    .immage-boxes .box {
+        display: inline-block;
+        width: 90%;
+        margin: 10px;
+        padding: 15px;
+        border-radius: 10px;
+        vertical-align: top;
+        transition: 0.5s all;
+        box-shadow: none;
+    }
+    /* immage container inside folder box */
+    .immage-boxes .box figure {
+        margin: 0;
+        border-radius: 10px;
+    }
+    /* immage inside container */
+    .immage-boxes .box figure img {
+        width: 250px;
+        height: 200px;
+        border-radius: 10px;
+        transform: rotateX(5deg) rotateY(20deg) rotateZ(5deg);
+        box-shadow: 5px 5px 20px;
+    }
+    /* text inside folder box*/
+    .immage-boxes .box span {
+        display: inline-block;
+        float: left;
+        transform: translateY(-10px);
+        color: white;
+    }
+    .immage-boxes .box h3 {
+        color: white;
+    }
+    /*back to folders button*/
+    .back-to-folders:hover {
+        transform: scale(1.1);
+    }
+    .back-to-folders {
+        /*    position: fixed;*/
+        display: block;
+        float: none;
+        text-align: center;
+        padding: 10px;
+        background-color: blue;
+        color: white;
+        font-size: 15px;
+        font-weight: 300;
+        border-radius: 20px;
+        margin-left: 5px;
+        margin-top: 15px;
+        transition: 0.5s all;
+    }
+    /* immage inside a slider */
+    .ripslider .rip-img {
+        width: 100%;
+        min-height: 500px;
+        overflow: hidden
+    }
+}
+
+@media only screen and (max-width: 1800px) {}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 768px) {
+    /* immage inside container */
+    .immage-boxes .box figure img {
+        width: 200px;
+        height: 150px;
+    }
+    .ripslider .rip-img {
+        min-height: 400px;
+    }
+}
+
+@media only screen and (max-width: 670px) {}
+
+@media only screen and (max-width: 480px) {
+    /* immage inside container */
+    .immage-boxes .box figure img {
+        width: 150px;
+        height: 100px;
+    }
+    .ripslider .rip-img {
+        min-height: 350px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .ripslider .rip-img {
+        min-height: 300px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .ripslider .rip-img {
+        min-height: 280px;
+    }
+}

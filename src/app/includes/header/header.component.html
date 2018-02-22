@@ -1,0 +1,46 @@
+<!---Navbar-->        
+<nav id="navbar">
+        <!--mobile nav icon-->
+        <a class="mobile-nav js--mobile-nav-icon"><i class="ion-navicon-round mobile-nav-icon"></i></a>
+        
+        <!--Logo-->
+        <a routerLink="/home" class="nav-logo" >
+            <img  data-src="assets/resources/img/logo.png" alt="" class="nav-logo-native">
+            <img  data-src="assets/resources/img/globe-earth-animation-7.gif" alt=""class="globe-animation">
+            <img  data-src="assets/resources/img/arrow.png" alt=""class="arrow-animation">
+            <span class="text-alpha-animation">Celebrating 20th Anniversary</span>
+        </a>
+        
+        <!--nav icons container-->
+        <ul class="main-nav js--main-nav">
+            <a routerLink="/home" [routerLinkActive]="['is-active']">
+                <li>
+                    <i class="ion-ios-home icon-home"></i><span class="nav-title">Home</span>
+                </li>
+            </a>
+            <a routerLink="/about" [routerLinkActive]="['is-active']">
+                <li><i class="ion-ios-color-filter-outline icon-about"></i><span class="nav-title">About Us</span>
+                </li>
+            </a>
+            <a routerLink="/on-shore" [routerLinkActive]="['is-active']">
+                <li>
+                    <i class="icon-on-shore"><img src="assets/resources/img/icons/On%20shore1.png" alt=""></i>
+                    <span class="nav-title">On-Shore Off-Site Managed Services</span>
+                </li>
+            </a>
+            <!-- <a routerLink="/it-talent" [routerLinkActive]="['is-active']"><li><i class="icon-talent-acquistion"><img src="assets/resources/img/icons/recruiting.png" alt=""></i><span class="nav-title">IT Talent Acquisition</span></li></a> -->
+            <a routerLink="/it-talent" [routerLinkActive]="['is-active']"><li><i class="ion-ios-search icon-talent-acquistion"></i><span class="nav-title">IT Talent Acquisition</span></li></a>
+            <a routerLink="/it-training-automation" [routerLinkActive]="['is-active']">
+                <li>
+                    <i class="icon-it-training"><img src="assets/resources/img/icons/training1.png"></i>
+                    <span class="nav-title"> IT Training & Innovation</span>
+                </li>
+            </a>
+            <!-- <a routerLink="/sales" [routerLinkActive]="['is-active']"><li><i class="icon-sales-product"><img src="assets/resources/img/icons/sales1.png" alt=""></i><span class="nav-title">Sales & Products</span></li></a> -->
+            <a routerLink="/sales" [routerLinkActive]="['is-active']"><li><i class="ion-ios-cart icon-sales-product "></i><span class="nav-title">Sales & Products</span></li></a>
+            <a routerLink="/gallery" [routerLinkActive]="['is-active']"><li><i class="icon-gallery"><img src="assets/resources/img/icons/gallery.png" alt=""></i><span class="nav-title">Gallery</span></li></a>
+            <!-- <a routerLink="/contact" [routerLinkActive]="['is-active']"><li><i class="icon-contact"><img src="assets/resources/img/icons/contact.png" alt=""></i><span class="nav-title">Contact Us</span></li></a> -->
+            <a routerLink="/contact" [routerLinkActive]="['is-active']"><li><i class="ion-android-mail icon-contact"></i><span class="nav-title">Contact Us</span></li></a>
+        </ul>
+    </nav>
+    <!---end of Navbar-->

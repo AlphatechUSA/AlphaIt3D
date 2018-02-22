@@ -1,0 +1,62 @@
+<section id="threed-cube">
+    <div id="options">
+        <div id="show-buttons">
+            <ul>
+                <!-- <li>
+                    <a class="show-front">Training & Inovation</a>
+                </li> -->
+                <!-- <li>
+                    <a class="show-back">Step interview process</a>
+                  </li> -->
+                <!-- <li>
+                    <a class="show-right">Job Types</a>
+                  </li> -->
+                <!-- <li>
+                    <a class="show-left">job-profiles</a>
+                  </li> -->
+                <!-- <li>
+                    <a class="show-top">Our advantage</a>
+                  </li> -->
+                <!-- <li>
+                    <a class="show-bottom">testimonials</a>
+                  </li> -->
+            </ul>
+        </div>
+    </div>
+    <div id="theArt">
+        <div id="cube" class="show-front">
+
+            <!---Front side-->
+            <div id="front" class="front side">
+                <app-folders *ngIf="showFolders;else slider" [gallery]="gallery.gallery" (folderClick)="showSlider($event)"> </app-folders>
+                <ng-template #slider>
+                    <app-slider [galleryFolder]="getFolderToShow()" (backToFolders)="showAllFolders()">
+
+                    </app-slider>
+                </ng-template>
+            </div>
+            <!---Back side-->
+            <div id="back" class="back side">
+
+            </div>
+
+            <!---Right side-->
+            <div id="right" class="right side">
+
+            </div>
+
+            <!---Left side-->
+            <div id="left" class="left side">
+
+            </div>
+            <!---Top side-->
+            <div id="top" class="top side">
+
+            </div>
+            <!---Bottom side-->
+            <div id="bottom" class="bottom side">
+
+            </div>
+        </div>
+    </div>
+</section>

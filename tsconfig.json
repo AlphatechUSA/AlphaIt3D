@@ -1,8 +1,10 @@
 {
   "compileOnSave": false,
+  // "allowJs": true,
   "compilerOptions": {
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
+    // "allowJs": true,
     "declaration": false,
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
@@ -11,6 +13,7 @@
     "typeRoots": [
       "node_modules/@types"
     ],
+    // "allowJs": true,
     "lib": [
       "es2017",
       "dom"

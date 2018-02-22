@@ -1,0 +1,340 @@
+/*
+ @media only screen and (max-width: 2560px) {}
+
+@media only screen and (max-width: 1800px) {}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 670px) {}
+
+@media only screen and (max-width: 480px) {}
+
+@media only screen and (max-width: 375px) {}
+
+@media only screen and (max-width: 320px) {} 
+*/
+
+@media only screen and (max-width: 2560px) {
+    /*--------3d-Video-Container Section--------*/
+    .rip-main-container {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+        position: absolute;
+        left: 0;
+        right: 0;
+    }
+    /*---items container which wraps them*/
+    .rip-video-container {
+        margin-top: 80px;
+        display: inline-block;
+    }
+    /*--- Mutual properties for 3dElement ---*/
+    .rip-video-container div {
+        position: relative;
+        float: left;
+        margin-left: 10px;
+        text-align: center;
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+        -webkit-transition: 0.7s;
+        transition: 0.7s;
+        border-radius: 8%;
+        overflow: hidden;
+        border-bottom: 2px solid red;
+    }
+    .rip-video-container div:hover {
+        -webkit-box-shadow: 25px 15px 4px #a0a0a0;
+        box-shadow: 25px 15px 4px #a0a0a0;
+        -webkit-transform: translate(-20px, -20px) rotate(15deg);
+        transform: translate(-20px, -20px) rotate(15deg);
+        z-index: 100;
+        background: #006fa1;
+    }
+    /*--- Text inside 3dElement---*/
+    .rip-video-container div span {
+        background-color: rgba(0, 0, 0, 0.65);
+        position: absolute;
+        margin: 5%;
+        display: block;
+        color: rgba(255, 255, 255, 0.97);
+        font-size: 125%;
+        font-weight: 500;
+        z-index: 200;
+        /*to show title on video*/
+        border-radius: 20px;
+        padding: 10px;
+    }
+    /* First 3dElement */
+    .manage-services span{ 
+        background: #e52d27;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+        }
+    .manage-services {
+       -webkit-box-shadow: 5px 0px 4px #a0a0a0;
+        box-shadow: 5px 0px 4px #a0a0a0;
+        margin-top: 80px;
+        height: 180px;
+        width: 200px;
+        z-index: 3;
+    }
+    /*Second 3dElement*/
+    .innovation-training span{
+        background: #ADD100;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #7B920A, #ADD100);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #7B920A, #ADD100); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        }
+    .innovation-training {
+       -webkit-box-shadow: 7px 0px 4px #a0a0a0;
+        box-shadow: 7px 0px 4px #a0a0a0;
+        margin-top: 40px;
+        height: 160px;
+        width: 180px;
+        z-index: 2;
+    }
+    /*Third 3dElement*/
+    .staffing-services {
+        background: #ebff00;
+        background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(rgba(0, 111, 161, 0.40)));
+        background: linear-gradient(#fff, rgba(0, 111, 161, 0.40));
+        -webkit-box-shadow: 9px 0px 4px #a0a0a0;
+        box-shadow: 9px 0px 4px #a0a0a0;
+        height: 140px;
+        width: 160px;
+        z-index: 1;
+    }
+    /*Show full video in video boxes*/
+    iframe {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    /*--------end of 3d-Video-Container Section--------*/
+    /*--------What-We-Do Section--------*/
+    /*immage of what we do section*/
+    #what-we-do i img {
+        width: 60px;
+        margin-top: 10px;
+    }
+    /*icon of what we do section(immage is inside i tag)*/
+    #what-we-do i {
+        font-size: 400%;
+        color: #634730;
+    }
+    /*what we do box container*/
+    #what-we-do .box {
+        /* min-height: 200px; */
+        width: 90%;
+        /* margin-top: 20px; */
+        padding: 0px 15px;
+    }
+    /*--------end of What-We-Do Section--------*/
+    /*--------Partners--------*/
+    /*immages in partners section*/
+    #partners img {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 20px;
+        width: 100px;
+        height: 100px;
+        background-color: black;
+        opacity: 0.7;
+        overflow: hidden;
+    }
+    /*hover affect on immages inside partners section*/
+    #partners img:hover {
+        opacity: 1;
+    }
+    /*--------end of Partners Section--------*/
+    /*--------Our-Methodology Section--------*/
+    /*box containers of methodology  section*/
+    #methodology .box {
+        /*    min-height: 300px;*/
+    }
+    /*text informations (line items) within methodology section*/
+    #methodology li {
+        list-style: none;
+        margin-top: 10px;
+    }
+    /*icons within methodology section*/
+    #methodology ul i {
+        display: inline-block;
+        font-size: 20px;
+    }
+    /*--------end of Our-Methodology Section--------*/
+    /*--------Testimonials Section--------*/
+    /*testimonials section*/
+    .testimonial {
+        display: block;
+        height: auto;
+        overflow: hidden;
+    }
+    .testimonial:before {
+        display: block;
+        margin: 15px auto;
+        width: 10%;
+        background-color: white;
+        height: 5px;
+        content: "";
+    }
+    /*testimonials information and autor styles*/
+    .quote-phrase, .quote-author {
+        font-family: sans-serif;
+        font-weight: 300;
+        display: block;
+        vertical-align: middle;
+    }
+    /*only testimonials information*/
+    .quote-phrase {
+        /*    height: 200px;*/
+        /*    font-size:90%;*/
+        font-weight: 500;
+        color: #FFF;
+        font-style: italic;
+    }
+    /*quoute mark style(") that is at the beginnig and ending of testimonial information*/
+    .quote-marks {
+        font-size: 150%;
+        padding: 0 3px 3px;
+        position: inherit;
+    }
+    /*testimonial author*/
+    .quote-author {
+        font-style: normal;
+        font-size: 130%;
+        color: #b14943;
+        font-weight: 400;
+        /* height: 30px; */
+    }
+    /*who we are text.It deletes default margins and shadow of boxs.without it responsive design dont looks good*/
+    #who-we-are .box {
+        margin: 0 0;
+        width: 90%;
+        -webkit-box-shadow: 0 0 0;
+        box-shadow: 0 0 0;
+    }
+    /*--------Clients Section--------*/
+    /*clientes section*/
+    #our-clients {
+        /*    background-color: rgba(240, 240, 240, 0.38);*/
+    }
+    /*immages inside clients section*/
+    #our-clients img {
+        margin-top: 30px;
+        margin-left: 20px;
+        margin-right: 20px;
+        border-radius: 25%;
+        width: 100px;
+        height: 100px;
+        -webkit-transition: all 1s cubic-bezier(.75, .92, 0, 0);
+        transition: all 1s cubic-bezier(.75, .92, 0, 0);
+        transform: scale(1.55);
+        opacity: 0.8;
+        background-color:#fff;
+    }
+    /*hovering affect on immages inside client section*/
+    #our-clients img:hover {
+        border-radius: 130px;
+    }
+    /*headline inside clients section*/
+    .clients-h2 {
+        margin-top: 60px;
+    }
+    .square-box-with-i i {
+        display: inline-block;
+        padding: 0 10px;
+        vertical-align: middle;
+        font-size: 200%;
+    }
+    /*--------end of Clients Section--------*/
+}
+
+@media only screen and (max-width: 1800px) {}
+
+@media only screen and (max-width: 1200px) {}
+
+@media only screen and (max-width: 1024px) {}
+
+@media only screen and (max-width: 768px) {
+    /*---items container which wraps them*/
+    .rip-video-container {
+        margin-top: 0px;
+    }
+    .manage-services {
+        /* height: 100px; */
+        /* width: 100px; */
+    }
+    /*Second 3dElement*/
+    .innovation-training {
+        /* height: 100px; */
+        /* width: 100px; */
+    }
+    /*Third 3dElement*/
+    .staffing-services {
+        /* height: 100px; */
+        /* width: 100px; */
+    }
+        /*immage of what we do section*/
+        #what-we-do i img {
+            width: 20px;
+        }
+}
+
+@media only screen and (max-width: 670px) {}
+
+@media only screen and (max-width: 480px) {
+    .quote-author {
+        font-size: 20px;
+    }
+    .rip-video-container div span{
+        font-size: 100%;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .rip-video-container div {
+        float: none;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .rip-video-container div span {
+        font-size: 80%;
+    }
+    .rip-video-container div {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+        margin-top: 20px;
+    }
+    .rip-video-container div:first-child {
+        /* margin-left: 10px; */
+        border-top: none;
+    }
+    /* First 3dElement */
+    .manage-services {
+        margin-top: 0px;
+        height: 150px;
+        width: 150px;
+        z-index: 3;
+    }
+    /*Second 3dElement*/
+    .innovation-training {
+        margin-top: 0px;
+        height: 150px;
+        width: 150px;
+        z-index: 2;
+    }
+    /*Third 3dElement*/
+    .staffing-services {
+        height: 150px;
+        width: 150px;
+        z-index: 1;
+    }
+}

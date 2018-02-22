@@ -1,0 +1,1625 @@
+/*
+colors that we are using:
+ocean blue: #1C6BA0
+wine color: #91101f 
+*/
+
+/*******************Home styles*******************/
+
+/*--------Section--------*/
+
+/*******************Default styles*******************/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif, 'Arial';
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/*all elements styles*/
+
+*:focus {
+    outline: none;
+}
+
+/*whole pages style*/
+
+html {
+    position: relative;
+    background-color: #fff;
+    color: white;
+    font-family: 'Lato', sans-serif, 'Arial';
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    font-size: 15px;
+    /* overflow: hidden; */
+}
+
+/*documents default style*/
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*all sections default styles*/
+
+section {
+    padding: 10px 0px;
+    padding-bottom: 20px;
+}
+
+/*h2 headings style*/
+
+h2 {
+    margin-top: 10px;
+    text-align: center;
+    text-transform: capitalize;
+    cursor: default;
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    color: #870000;
+}
+
+/*h3 headings style*/
+
+h3{
+    display: block;
+    text-align: center;
+    cursor: default;
+    margin: 5px auto;
+    font-weight: 300;
+    font-size: 17px;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    line-height: 145%;
+    padding: 0 10px;
+    color: white;
+    text-transform: capitalize;
+}
+
+/*adds white color to text*/
+
+.white {
+    color: white;
+}
+
+/*add grey background color*/
+
+.grey {
+    background-color: rgba(240, 240, 240, 0.40);
+}
+
+.linear-grey {
+    background: -webkit-gradient(linear, left top, left bottom, from(white), to(rgba(185, 185, 185, 0.46)));
+    background: linear-gradient(white, rgba(185, 185, 185, 0.46));
+}
+
+/*row container for div elements*/
+
+.row {
+    /*    width: 1440px;*/
+    text-align: center;
+    margin: 0 auto;
+    max-width: 2000px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.row-full {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+/*Write padding to that concreet boxes that you dont want to center*/
+
+/*Container*/
+
+.box {
+    /*    visibility: hidden;*/
+    /* background-color: white; */
+    background: #3a6186;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    /* color: #7c1212     */
+    position: relative;
+    padding: 10px;
+    border-radius: 20px;
+    display: inline-block;
+    -webkit-transition: all 1.3s cubic-bezier(.75, .92, 0, 0);
+    transition: all 1.3s cubic-bezier(.75, .92, 0, 0);
+    vertical-align: top;
+    overflow: hidden;
+    margin-top: 10px;
+    /*beautiful text*/
+    text-rendering: optimizeLegibility;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    line-height: 145%;
+    font-size: 15px;
+    opacity: 0.8;
+    /* -webkit-box-shadow: 5px 5px 10px #989898; */
+    /* box-shadow: 5px 5px 10px #989898; */
+}
+
+/*container for box containers*/
+
+.boxes {
+    width: auto;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    height: auto;
+}
+
+/*default styles for box conainers*/
+
+.boxes .box {
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 100%;
+}
+
+/*floats to left*/
+
+.float-left {
+    /* float: left; */
+}
+
+/*floats to right*/
+
+.float-right {
+    /* float: right; */
+}
+
+/**************************Shapes**************************/
+
+/*---------------------- Beautiful inline list items  ----------------------*/
+
+/*each option in options list*/
+
+.options li {
+    width: auto;
+    display: inline-block;
+    /*    font-size: 80%;*/
+    margin: 10px 5px;
+    padding: 5px;
+    /* font-size: 80%; */
+    float: left;
+    text-align: center;
+    list-style: none;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+   
+    background: #3a6186;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
+    /* background-color: white; */
+    /* color: black; */
+}
+
+/*---------------------- end of Beautiful inline list items  ----------------------*/
+
+/*---------------------- Container for heading and items  ----------------------*/
+
+/*larg container for heading and items*/
+
+.one-box-in-line .box {
+    width: 95%;
+    ;
+    /* background-image: -webkit-linear-gradient(top, #7c1212, #d63542); */
+
+    background: #3a6186;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+    /* color: white; */
+    margin: 20px auto;
+    padding: 0px;
+    display: block
+}
+
+/*heading in large container for heading and items*/
+
+.one-box-in-line .box h3 {
+    font-size: 20px;
+}
+
+/*each li emenets in container for heading and items*/
+
+.one-box-in-line .box li {
+    list-style: none;
+}
+
+/*decoration between li elements in container for heading and items*/
+
+.one-box-in-line .box li:after {
+    display: block;
+    margin: 15px auto;
+    width: 10px;
+    height: 10px;
+    content: " ";
+    border-radius: 20px;
+    background-color: #9d9999;
+}
+
+/*after last li elements in container for heading and items*/
+
+.one-box-in-line .box li:last-child:after {
+    display: none;
+}
+
+/*each text of li element ,in container for heading and items*/
+
+.one-box-in-line .box p {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(240, 240, 240, 1);
+    display: inline-block;
+}
+
+/*---------------------- end of Container for heading and items ----------------------*/
+
+/*---------------------- squeare box with icon and text inside ----------------------*/
+
+/*to create it we should create this kind of code*/
+
+/*
+
+<div class="row boxes square-box-with-i">
+<div class="box">
+<i class="ion-ios-thunderstorm-outline"></i>
+<h3>Shortlisting Candidates</h3>
+<p class="">
+Recruitment desk identifies available candidates who meet the requirements, qualifications and pay rate for the position
+</p>    
+</div>
+</div>
+*/
+
+/*square oval boxes*/
+
+.square-oval .boxes {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/*square boxes with oval corners*/
+
+.square-oval .box {
+    border-radius: 10%;
+    width: 90%;
+    vertical-align: middle;
+    background-color: cadetblue;
+    margin: 10px auto;
+    ;
+    display: block;
+    padding: 10px;
+}
+
+/* text that is in square-oval container*/
+
+.square-oval .box p {
+    display: inline-block;
+    font-weight: 300;
+    /* color: white; */
+    vertical-align: middle;
+}
+
+/*---------------------- end of squeare box with icon and text inside ----------------------*/
+
+/*---------------------- square boxes with icon inside ----------------------*/
+
+/*icon that is in square box*/
+
+.square-box-with-i i {
+    font-size: 400%;
+    display: none;
+}
+
+.square-box-with-i h3 {
+    color: white;
+    /* font-size: 25px; */
+}
+
+/*box container that is square-box-with-i*/
+
+.square-box-with-i .box {
+    background-color: rgb(255, 255, 255);
+    width: 80%;
+    height: auto;
+    margin-top: 5px;
+    vertical-align: top;
+    /* color: black; */
+    padding-bottom: 25px;
+}
+
+/*text in square box*/
+
+.square-box-with-i .box p {}
+
+/*---------------------- end of square boxes with icon inside ----------------------*/
+
+/*---------------------- boxes with circele shape and text in center ----------------------*/
+
+/*inseide round-boxes class we shuld make div with box class and then instide it p tag with text*/
+
+.round-boxes {
+    display: inline-block;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+/*round-box container*/
+
+.round-boxes .box:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.round-boxes .box {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 152, 208, 0.81);
+    margin: 0px 10px;
+    display: inline-block;
+    line-height: 200px;
+    text-transform: capitalize;
+}
+
+/*text inside round box*/
+
+.round-boxes .box p {
+    display: inline-block;
+    font-weight: 500;
+    color: white;
+    vertical-align: middle;
+    text-transform: capitalize;
+}
+
+/*----------------------end of boxes with circele shape and text in center----------------------*/
+
+/*---------------------- Profiles-Lists Section ----------------------*/
+
+#profiles-list li:nth-child(odd) {
+    float: left;
+    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+#profiles-list li:nth-child(even) {
+    float: right;
+    background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0)));
+    background: linear-gradient(to left, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+#profiles-list li {
+    width: 51%;
+    /*    float: left;*/
+    margin: 10px auto;
+    padding: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    list-style: none;
+    border: 1px solid #dbdbdb;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 80%;
+    color:white;
+
+}
+
+/*---------------------- end of Profiles-Lists Section ----------------------*/
+
+/*---------------------- Step-by-step boxes Section ----------------------*/
+
+/*each stage's container*/
+
+.stage {
+    display: inline-block;
+}
+
+/*container for round-box*/
+
+.stage .round-boxes {
+    margin: 0;
+}
+
+/*each round box*/
+
+.stage .box {
+    margin: 10px 0px;
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+}
+
+.stage .box p {
+    display: inline-block;
+    color: white;
+    vertical-align: middle;
+    font-weight: 500;
+}
+
+/*-------- First-phase --------*/
+
+/* analitics section */
+
+#step-by-step-container {
+    position: relative;
+    padding-bottom: 0px;
+}
+
+/*container for first phase*/
+
+.stages-phase-1-container {
+    display: block;
+    text-align: center;
+}
+
+/*-------- end of First-phase --------*/
+
+/*-------- Second-phase --------*/
+
+/*container for second phase*/
+
+.stages-phase-2-container {
+    position: relative;
+    display: block;
+}
+
+/*each box in second phase(for changing style of box(border-radius))*/
+
+.stages-phase-2 .box {
+    border-radius: 20px;
+}
+
+/*each container in second phase*/
+
+.stages-phase-2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    display: none;
+}
+
+/*-------- end of Second-phase --------*/
+
+/*-------- Information-phase --------*/
+
+/*container for Data items*/
+
+.stages-phase-info-container {
+    position: relative;
+    padding: 50px;
+}
+
+/*contaier for each Data item (with action items and output)*/
+
+.stages-phase-info {
+    padding: 20px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 90%;
+    top: 40px;
+    border-radius: 50px;
+    -webkit-box-shadow: 5px 5px 20px #989898;
+    box-shadow: 5px 5px 20px #989898;
+    overflow: hidden;
+    text-align: center;
+    display: none;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+}
+
+.stages-phase-info p {
+    padding: 20px;
+}
+
+/*each Data item (with action items and output)*/
+
+.data-options {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+}
+
+/*li in phases-info box ul's */
+
+.stages-phase-info .box li {
+    text-align: left;
+    color: white;
+    font-weight: 300;
+    margin-top: 5px;
+}
+
+.stages-phase-info .box li ul {
+    padding-left: 30px;
+}
+
+/*-------- end of Information-phase --------*/
+
+/*---------------------- end of Step-by-step boxes Section ----------------------*/
+
+/*-------------------------Links-------------------------*/
+
+/**************************end of Shapes**************************/
+
+/*effect on click moment*/
+
+a:focus {
+    outline: 0;
+}
+
+/*links default style*/
+
+a,li{
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+/*link inside section with bacground color(large links)*/
+
+.larg-link {
+    display: block;
+    margin: 10px auto;
+    padding: 15px;
+    width: 80%;
+    font-size: 100%;
+    color: white;
+    border: 1px solid #cecece;
+    -webkit-transition: all 1.3s cubic-bezier(.75, .92, 0, 0);
+    transition: all 1.3s cubic-bezier(.75, .92, 0, 0);
+}
+
+/*effect after hovering larg link*/
+
+.larg-link:hover {
+    -webkit-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+/*-------------------------end of Links-------------------------*/
+
+/*-------------------------Texts-------------------------*/
+
+/*p tags default styles*/
+
+p {
+    text-rendering: optimizeLegibility;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    /* font-size: 15px; */
+    line-height: 145%;
+}
+
+/*span texts default styles*/
+
+span {
+    text-rendering: optimizeLegibility;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 145%;
+}
+
+/*Little text*/
+
+.little-text {
+    /*    font-size: 70%;*/
+}
+
+/*title in box container*/
+
+.box-title1 {
+    text-transform: none;
+    display: block;
+    text-align: center;
+}
+
+/*second title in box container*/
+
+.box-title2 {
+    text-transform: capitalize;
+    display: block;
+    text-align: center;
+}
+
+/*text styles in box-text container*/
+
+.box-text {
+    display: block;
+    text-align: left;
+    font-size: 100%;
+}
+
+/*text inside sections that has bacground color(Red)*/
+
+.text-with-background {
+    font-size: 90%;
+    font-weight: 500;
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: 1px;
+    color: white;
+    padding: 20px 30px;
+    max-width: 2000px;
+    text-align: center;
+    display: inline-block;
+}
+
+/*Large title*/
+
+.big-title {
+    display: block;
+    text-align: center;
+    font-size: 200%;
+    line-height: 120%;
+    padding: 0 10px;
+}
+
+/*-------------------------end of Texts-------------------------*/
+
+/*-------------------------Loader-------------------------*/
+
+/*Loading immages styles*/
+
+.loader {
+    /*    display: none;*/
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1000000;
+    /* background: url('../img/page-loader.gif') 50% 50% no-repeat rgba(255, 255, 255, 0) ; */
+}
+
+/*-------------------------end of Loader-------------------------*/
+
+/*-------------------------Icons-------------------------*/
+
+/*all icons default styles*/
+
+i {
+    color: #1C6BA0;
+    vertical-align: middle;
+}
+
+/*-------------------------end of icons-------------------------*/
+
+/*-------------------------Buttons-------------------------*/
+
+/*blue link button*/
+
+.btn-link {
+    position: relative;
+    padding: 10px;
+    margin: 0 auto;
+    display: block;
+    border: 1.5px solid #006FA1;
+    color: white;
+    font-size: 100%;
+    font-weight: 500;
+    text-transform: lowercase;
+    border-radius: 10px;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+    cursor: pointer;
+    bottom: 20px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+/*hovering effect on blue button*/
+
+.btn-link:hover {
+    color: white;
+    background-color: #006FA1;
+}
+
+/*-------------------------end of buttons-------------------------*/
+
+/*-------------------------Immages-------------------------*/
+
+/*all immages default styles*/
+
+img {
+    -webkit-transition: all 0.3s cubic-bezier(.75, .92, 0, 0);
+    transition: all 0.3s cubic-bezier(.75, .92, 0, 0);
+}
+
+/* all immages defaut hovering effect*/
+
+img:hover {
+    /* -webkit-transform: scale(1.1);
+    transform: scale(1.1); */
+    /* opacity: 1; */
+}
+
+/*immages that are on header(first section of the pages)now its not visible*/
+
+/*can be deleted*/
+
+.header-img {
+    height: 700px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    display: none;
+}
+
+/*immage container on about us page*/
+
+.img-block-container {
+    text-align: center;
+    margin: 30px auto;
+}
+
+/*immmage on aboit us page*/
+
+.img-block-container img:hover {
+    -webkit-transform: scale(1.03);
+    transform: scale(1.03);
+}
+
+.img-block-container img {
+    display: inline-block;
+    width: 60%;
+    border-radius: 20px;
+}
+
+/*-------------------------end of Immages-------------------------*/
+
+/*-------------------------Bacground color-------------------------*/
+
+/*sections with (Red) bacground color*/
+
+.section-bg-color {
+    background-color: #9d2b2b;
+    background-image: -webkit-linear-gradient(top, #7c1212, #d63542);
+    color: white;
+}
+
+/*-------------------------end of Immages-------------------------*/
+
+/*------------------------------------------*/
+
+/*-------Animations---*/
+
+/*-----------------------------------------*/
+
+/*boxes appearing affect*/
+
+@-webkit-keyframes leaves {
+    0% {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes leaves {
+    0% {
+        -webkit-transform-origin: center;
+        transform-origin: center;
+        -webkit-transform: scale(0);
+        transform: scale(0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/*Text Rotation*/
+
+@-webkit-keyframes text-rotation {
+    0% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    25% {
+        text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black, 6px 0 black;
+    }
+    50% {
+        text-shadow: 0 0 black;
+    }
+    75% {
+        text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black, -6px 0 black;
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+@keyframes text-rotation {
+    0% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    25% {
+        text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black, 6px 0 black;
+    }
+    50% {
+        text-shadow: 0 0 black;
+    }
+    75% {
+        text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black, -6px 0 black;
+    }
+    100% {
+        -webkit-transform: rotateY(360deg);
+        transform: rotateY(360deg);
+    }
+}
+
+/*Arrow Rotation*/
+
+@-webkit-keyframes arrow-rotation {
+    0% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    25% {
+        text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black, 6px 0 black;
+    }
+    50% {
+        text-shadow: 0 0 black;
+    }
+    75% {
+        text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black, -6px 0 black;
+    }
+    100% {
+        -webkit-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+    }
+}
+
+@keyframes arrow-rotation {
+    0% {
+        -webkit-transform: rotateY(0deg);
+        transform: rotateY(0deg);
+    }
+    25% {
+        text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black, 6px 0 black;
+    }
+    50% {
+        text-shadow: 0 0 black;
+    }
+    75% {
+        text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black, -5px 0 black, -6px 0 black;
+    }
+    100% {
+        -webkit-transform: rotateY(-360deg);
+        transform: rotateY(-360deg);
+    }
+}
+
+/*(Celebrating) texts animation*/
+
+@-webkit-keyframes rubberBand {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        color: #adc7c7;
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+@keyframes rubberBand {
+    from {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+    50% {
+        -webkit-transform: scale(1.05);
+        transform: scale(1.05);
+        color: #adc7c7;
+    }
+    to {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}
+
+/*(Celebrating)texts style that is adding after pages loading is done*/
+
+.text-alpha-animation-start {
+    /*    -webkit-animation: 1s  4s 1000000 rubberBand;*/
+    /*    animation: 1s  4s 1000000 rubberBand;    */
+    -webkit-animation: 8s 4s 1000000 text-rotation;
+    animation: 8s 4s 1000000 text-rotation;
+}
+
+/*boxes appearing animation*/
+
+.leaves {
+    visibility: visible;
+    -webkit-animation: 2s cubic-bezier(.75, .92, 0, 0) 0s 1 leaves;
+    animation: 2s cubic-bezier(.75, .92, 0, 0) 0s 1 leaves;
+    opacity: 1;
+}
+
+/*-------------------------end of Animations-------------------------*/
+
+.clear-fix {}
+
+/*clears floating order to the element,that is after selected element*/
+
+.clear-fix:after {
+    clear: both;
+    display: block;
+    content: ".";
+    visibility: hidden;
+    height: 0px;
+}
+
+/*------------------------------------------*/
+
+/*---Navbar---*/
+
+/*------------------------------------------*/
+
+.icon-home {
+    /* background-image: -webkit-linear-gradient(bottom, #006495, rgba(0, 100, 149, 0.30)); */
+}
+
+.icon-about {
+    /* background-image: -webkit-linear-gradient(bottom, #004C70, rgba(0, 76, 112, 0.30)); */
+}
+
+.icon-on-shore {
+    /* background-image: -webkit-linear-gradient(bottom, rgba(0, 94, 106, 0.5), rgba(0, 147, 209, 0.10)); */
+}
+
+.icon-talent-acquistion {
+    /* background-image: -webkit-linear-gradient(bottom, rgba(8, 106, 0, 0.50), rgba(8, 106, 0, 0.10)); */
+}
+
+.icon-it-training {
+    /* background-image: -webkit-linear-gradient(bottom, rgba(191, 206, 9, 0.50), rgba(191, 206, 9, 0.10)); */
+}
+
+.icon-sales-product {
+    /* background-image: -webkit-linear-gradient(bottom, rgba(224, 160, 37, 0.50), rgba(224, 160, 37, 0.10)); */
+}
+
+.icon-contact {
+    /* background-image: -webkit-linear-gradient(bottom, rgba(108, 80, 162, 0.50), rgba(108, 80, 162, 0.10)); */
+}
+
+.icon-gallery {
+    background-image: -webkit-linear-gradient(bottom, rgba(162, 80, 95, 0.50), rgba(162, 80, 95, 0.10));
+}
+
+/*container of logo arrow and text*/
+
+.nav-logo {
+    display: inline-block;
+}
+
+/*immage of company*/
+
+.nav-logo-native:hover {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+/*Whole navbar*/
+
+nav {
+    /* padding: 0px 40px; */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #fff;
+    z-index: 100000;
+    -webkit-box-shadow: 5px 5px 20px #989898;
+    box-shadow: 5px 5px 20px #989898;
+    -webkit-transition: all 3s;
+    transition: all 3s;
+}
+
+/*Immages inside navbar*/
+
+nav img {
+    height: 80px;
+    /*    border: 2px solid red;*/
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+/*text thag is on logo*/
+
+.text-alpha-animation {
+    position: absolute;
+    display: inline-block;
+    left: 10px;
+    top: 75px;
+    /*    -webkit-transform-origin: 150px 0px 395px;*/
+    /*    transform-origin: 150px 0px 395px;*/
+    -webkit-transform-origin: 110px 0px 105px;
+    transform-origin: 110px 0px 105px;
+    z-index: 100000;
+    color: #91101f;
+    font-weight: 600;
+    font-size: 100%;
+    font-style: italic;
+}
+
+/*Arrow on globe*/
+
+.arrow-animation {
+    position: absolute;
+    left: 130px;
+    top: 35px;
+    -webkit-animation: 5s linear 0s 1000000 arrow-rotation;
+    animation: 5s linear 0s 1000000 arrow-rotation;
+    -webkit-perspective: 100000;
+    perspective: 100000;
+    height: 23px;
+    -webkit-transform-origin: 25px 0px 30px;
+    transform-origin: 25px 0px 30px;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+/*Rotating globe animation*/
+
+.globe-animation {
+    position: absolute;
+    left: 117px;
+    height: 65px;
+    top: 8px;
+}
+
+/*navbar links container*/
+
+.main-nav {
+    float: right;
+    height: auto;
+    padding: 10px;
+}
+
+/* link of each title in navbar*/
+
+nav .main-nav a {
+    vertical-align: top;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    height: 100%;
+    width: 101px;
+    -webkit-transition: all 0.3s cubic-bezier(.75, .92, 0, 0);
+    transition: all 0.3s cubic-bezier(.75, .92, 0, 0);
+}
+
+/* each title in navbar*/
+
+nav .main-nav li {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+
+/*icons in navbar*/
+
+nav .main-nav li img {
+    height: 35px;
+    width: 35px;
+    padding: 0;
+    vertical-align: middle;
+    margin-top: -5px;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/*hovering effect on each link in navbar*/
+
+nav .main-nav a:hover img, nav .main-nav a:hover i {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+/*icon that is in navbar(Immages too)*/
+
+nav .main-nav li i {
+    display: inline-block;
+    float: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 30%;
+    color: #fff;
+    -webkit-box-shadow: 2px 2px 10px #cccccc;
+    box-shadow: 2px 2px 10px #cccccc;
+    line-height: 45px;
+    text-align: center;
+    font-size: 150%;
+    -webkit-transition: all 0.3s cubic-bezier(.75, .92, 0, 0);
+    transition: all 0.3s cubic-bezier(.75, .92, 0, 0);
+    
+    background: #3a6186;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+/*hover effect of icons in navbar */
+
+nav .main-nav li i:hover {
+    -webkit-box-shadow: 5px 2px 10px #cccccc;
+    box-shadow: 5px 2px 10px #cccccc;
+}
+
+.is-active {
+    color: #ff7600;
+    background-color: rgba(240, 240, 240, 0.5);
+    border-radius: 20px;
+}
+
+/*titles under icon*/
+
+.nav-title {
+    display: block;
+    margin: 5px auto;
+    font-weight: 300;
+    color: black;
+    /* text-shadow: 0 1px 0 rgb(204, 204, 204), 0 2px 0 rgb(201, 201, 201), 0 1px 0 rgb(187, 187, 187), 0 1px 0 rgb(185, 185, 185), 0 1px 0 rgb(170, 170, 170), 0 1px 1px rgba(0, 0, 0, 0.0980392), 0 0 1px rgba(0, 0, 0, 0.0980392), 0 1px 1px rgba(0, 0, 0, 0.298039), 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.247059), 0 1px 1px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.14902); */
+    font: normal 10px/normal "Passero One", Helvetica, sans-serif;
+}
+
+/* text on navbar */
+
+nav .main-nav a:hover, nav .main-nav a:active {
+    /* color: #ff7600; */
+    /*    background-color: rgba(240, 240, 240, 0.38);*/
+    /* border-radius: 20px; */
+}
+
+/*icon that appears for tablets and mobiles(as default its hidden)*/
+
+.mobile-nav-icon {
+    display: inline-block;
+    color: black;
+    font-size: 350%;
+    margin-right: 50px;
+    float: right;
+    line-height: 100px;
+}
+
+/*------------------------- end of navbar -------------------------*/
+
+/*------------------------- Wraper -------------------------*/
+
+/*Container for page (using for cool effect of footer)*/
+
+#wraper {
+    padding-top: 0px;
+    z-index: 4;
+    margin-bottom: 250px;
+    margin-top: 100px;
+    position: relative;
+    background-color: white;
+    padding-bottom: 0px;
+    -webkit-box-shadow: 5px 5px 20px #989898;
+    box-shadow: 5px 5px 20px #989898;
+    opacity: 0;
+    -webkit-transition: all 2s;
+    transition: all 2s;
+}
+
+/*------------------------- end of Wraper -------------------------*/
+
+/*---------------------------------------------------------------------------------------*/
+
+/*---------------Container that appears using javascript after clicking(Modal) ---------------*/
+
+/*container that appears on web page using javascript*/
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    /*10 because progress bar has 1 and to appear above progress bar and other content*/
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Content container for header,body,footer */
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/*on hovering and pressing close button*/
+
+.close:hover, .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*header of modal container*/
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #006FA1;
+    color: white;
+    text-align: center;
+}
+
+/*body of modal container*/
+
+.modal-body {
+    padding: 2px 16px;
+    text-align: center;
+    height: 500px;
+    /*height of body(main container) important to write*/
+    width: 100%;
+}
+
+/*maps container*/
+
+#rip-container {
+    height: 100%;
+    /*align body height and width*/
+    width: 100%;
+}
+
+/*footer of modal container*/
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #006FA1;
+    color: white;
+}
+
+/*--------------- end of Modal-Container ---------------*/
+
+/*******************end of Default styles*******************/
+
+/***********************************Test home page**************************************/
+
+/*******************Data_analytics styles*******************/
+
+/*--------end of Container-for-Analitics-items --------*/
+
+/*--------end of Data_analytics Section--------*/
+
+/*******************end of Data_analytics styles*******************/
+
+/*------------------------- Left navbar -------------------------*/
+
+#options {
+    /*    left: 10px;*/
+    /*    top: 10px;*/
+    position: relative;
+    width: 200px;
+    float: left;
+}
+
+#options ul {
+    width: 100%;
+    display: block;
+    text-align: left;
+    list-style: none;
+}
+
+#options li a {
+    display: block;
+    position: relative;
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    text-transform: capitalize;
+    overflow: hidden;
+    text-align:center;
+    background-color: white;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    border-radius: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255) !important;
+}
+
+#options li a i{
+    font-size: 200%;
+    color:white;
+    margin-right: 5px;
+    float:left;
+}
+
+#options li{ 
+    transition: all 0.3s;
+}
+#options li :hover {
+    opacity: 0.8;
+}
+
+/*------------------------- end of Left navbar -------------------------*/
+
+/*Leves affeqct*/
+
+@keyframes leaves {
+    0% {
+        -webkit-transform-origin: 200px 700px 990px;
+        transform-origin: 200px 700px 990px;
+    }
+    100% {
+        -webkit-transform: rotateX(365deg) rotateY(370deg);
+        transform: rotateX(365deg) rotateY(370deg);
+        background-color: white;
+    }
+}
+
+@-webkit-keyframes load-cube {
+    0% {
+        /*        perspective: 500;*/
+        -webkit-transform-origin: 500px 0px -1500px;
+        transform-origin: 500px 0px -1500px;
+        -webkit-transform: rotateX(50deg) rotateY(10deg);
+        transform: rotateX(50deg) rotateY(10deg);
+    }
+    90% {
+        -webkit-transform: rotateX(500deg) rotateY(100deg);
+        transform: rotateX(500deg) rotateY(100deg);
+    }
+}
+
+/*
+@-webkit-keyframes load-cube{
+    0% {    
+        
+        perspective: 500;
+        -webkit-transform-origin: 100px 0px ;
+        transform-origin: 500px 0px -1500px;
+        -webkit-transform: rotateX(50deg) rotateY(10deg);
+        transform:rotateX(50deg) rotateY(10deg);
+    }
+    90% {
+        -webkit-transform: rotateX(500deg) rotateY(100deg);
+        transform: rotateX(500deg) rotateY(100deg);
+    }
+}
+*/
+
+.leaves {
+    -webkit-animation: 2.5s cubic-bezier(.75, .92, 0, 0) 0s 1 leaves;
+    animation: 2.5s cubic-bezier(.75, .92, 0, 0) 0s 1 leaves;
+    opacity: 1;
+}
+
+.load-cube {
+    -webkit-transition: all 3.5s;
+    transition: all 3.5s;
+    -webkit-animation: 5s cubic-bezier(.32, -0.01, .59, .95) 0s 1 load-cube;
+    animation: 5s cubic-bezier(.32, -0.01, .59, .95) 0s 1 load-cube;
+    /* animation: 1s cubic-bezier(.32,-0.01,.59,.95) 0s 1 load-cube; */
+}
+
+/*-------------------------end of What we do-------------------------*/
+
+/*------------------------------------------*/
+
+/*-------Footer (Right navbar)---*/
+
+/*-----------------------------------------*/
+
+#footer {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    width: 300px;
+    height: 100%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.13)), to(rgba(0, 0, 0, 0.3)));
+    background: linear-gradient(rgba(0, 0, 0, 0.13), rgba(0, 0, 0, 0.3));
+    padding-top: 120px;
+}
+
+#footer figure {
+    display: block;
+    text-align: center;
+}
+
+#footer figure img {
+    border-radius: 20px;
+}
+
+.contact-info {
+    width: auto;
+    display: inline-block;
+    margin: 0 auto;
+    padding-left: 40px;
+}
+
+.contact-info div {
+    margin-top: 5px;
+}
+
+.contact-info div span {
+    color: white;
+    font-weight: 300;
+}
+
+.contact-info div i {
+    font-size: 140%;
+    color: white;
+    display: block;
+}
+
+.keep-updated {
+    display: block;
+    text-align: center;
+}
+
+.keep-updated i:first-child {
+    margin-left: 0px;
+}
+
+.keep-updated i {
+    font-size: 200%;
+    margin-left: 20px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.keep-updated i:hover {
+    color: white;
+}
+
+i .facebook {
+    color: #3b5999;
+}
+
+.twitter {
+    color: #55acee;
+}
+
+.google {
+    color: #dd4b39;
+}
+
+.linked-in {
+    color: #0077B5;
+}
+
+.youtube {
+    color: #cd201f;
+}
+
+/*-------------------------end of Footer (Right navbar)-------------------------*/
+
+canvas {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: -10;
+}
+.title-with-subs h3:after{
+    content: '\261e';
+    display: inline-block;
+    font-size: 50px;
+    float: right;
+    padding-right:20px; 
+}
+.title-with-subs h3{
+    cursor: pointer;
+    padding: 5px;
+    font-weight: bold;
+    
+}
+.title-with-subs .box{
+    width: 100%;
+    padding: 0px; 
+    cursor: pointer;
+}
+
+.title-with-subs .box li:before {
+    display: block;
+    margin: 5px auto;
+    width: 5px;
+    height: 5px;
+    content: " ";
+    border-radius: 50%;
+    background-color: #9d9999;
+}
+/* .title-with-subs .box li:first-child:before {
+    display: none;
+} */
+    
+
+.title-with-subs ul{
+    display: none;
+    padding-bottom: 10px;
+}

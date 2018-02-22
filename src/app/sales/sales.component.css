@@ -1,0 +1,73 @@
+/*******************Sales And Products styles*******************/
+/*header immage*/
+.sales_and_products_img {
+    background:linear-gradient(rgba(0, 0, 0,0.6), rgba(0,0,0, 0.2)) ,url(/assets/resources/img/pics/on-shore.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*WE WILL CHANGE THIS SECTION AFTER WE WILL ADD IMMAGES TO IT*/
+/*--------Products-Immages Section--------*/
+/*box-es container*/
+#products .boxes{
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/*box container for each product*/
+#products  .box{
+    border-radius: 10%;
+    width: 90%;
+    height: auto;
+    background-color: rgba(0, 72, 208, 0.81);
+    margin: 20px auto;
+    display: block;
+    /* line-height: 250px; */
+}
+
+/*text inside box container(shape)*/
+#products  .box p{
+    display: inline-block;
+    font-size: 100%;
+    font-weight: 500;
+    color: white;
+}
+
+/*--------end of Products-Immages Section--------*/
+
+/*--------Profiles-Lists Section--------*/
+
+/*each profile fro profile list*/
+#profiles-list li{
+    width: 80%;
+    margin: 10px 5px;
+    padding: 20px;
+    text-align: center;
+    list-style: none;
+    border:1px solid #dbdbdb;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 80%;
+    /* background-color: white; */
+
+    background: #3a6186;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
+}
+
+/*profile that is odd(using to make nice affect)*/
+#profiles-list li:nth-child(odd){
+    float: left;
+    /* background-color: white; */
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0.7) 100%);  */
+}
+
+/*profile that is even(using to make nice affect)*/
+#profiles-list li:nth-child(even){
+    float: right;
+
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0.7) 100%);  */
+}
+/*--------end of Profiles-Lists Section--------*/
+/*******************end of Sales-And-Products styles*******************/
