@@ -4,7 +4,7 @@
 
     <h3>please choose a folder</h3>
     <!-- array for groups -->
-    <div class="row boxes immage-boxes" *ngFor="let galleryfolders of gallery;let i=index">
+    <div class="row boxes immage-boxes title-with-subs" *ngFor="let galleryfolders of gallery;let i=index">
         <!-- array to show folders inside current group -->
         <!-- on clicking a tag we are trowing event with i(group index) & j(folder) index infos to show this folder in slider  -->
         <a class="img-container box" *ngFor="let folder of galleryfolders.gallery_folders;let j=index" (click)="onFolderClick(i,j)">
