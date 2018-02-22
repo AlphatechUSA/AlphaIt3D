@@ -4,7 +4,6 @@ var init = function() {
       panelClassName = 'show-front',
 
       onButtonClick = function( event ){
-        event.preventDefault();
         box.removeClassName( panelClassName );
         panelClassName = event.target.className;
         box.addClassName( panelClassName );
