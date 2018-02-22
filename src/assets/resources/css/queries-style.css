@@ -47,6 +47,7 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
     #options li a {
         width: 100%;
         font-size: 25px;
+        padding: 10px;
     }
     
     /*--------3dBox---------*/
@@ -133,8 +134,8 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
     }
     #options li a {
         font-size: 20px;
-        padding: 15px;
         margin-top: 5px;
+        padding: 5px;
     }
     #theArt {
         width: 640px;
