@@ -70,7 +70,7 @@ textarea{
     height: 150px;
     border-radius: 10px;
     font-weight: 600;
-    font-size: 80%;
+    font-size: 120%;
     border: 1px solid #006FA1;
     resize: none;
 }
@@ -135,7 +135,7 @@ textarea{
     margin-top: 50px;
     display: block;
     margin: 0 auto;
-    width: 90%;
+    width: 100%;
 /*    display: inline-block;*/
     /* overflow: hidden; */
 }

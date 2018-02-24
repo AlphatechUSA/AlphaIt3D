@@ -46,6 +46,7 @@
         border-radius: 8%;
         overflow: hidden;
         border-bottom: 2px solid red;
+        will-change: transform;
     }
     .rip-video-container div:hover {
         -webkit-box-shadow: 25px 15px 4px #a0a0a0;
@@ -238,6 +239,7 @@
         transform: scale(1.55);
         opacity: 0.8;
         background-color:#fff;
+        will-change: transform;
     }
     /*hovering affect on immages inside client section*/
     #our-clients img:hover {

@@ -161,9 +161,9 @@ h3{
 /*default styles for box conainers*/
 
 .boxes .box {
-    margin-left: 10px;
-    margin-right: 10px;
-    height: 100%;
+    /* margin-left: 10px;
+    margin-right: 10px; */
+    /* height: 100%; */
 }
 
 /*floats to left*/
@@ -377,6 +377,7 @@ Recruitment desk identifies available candidates who meet the requirements, qual
     display: inline-block;
     line-height: 200px;
     text-transform: capitalize;
+    will-change: transform;
 }
 
 /*text inside round box*/
@@ -588,6 +589,7 @@ a,li{
     border: 1px solid #cecece;
     -webkit-transition: all 1.3s cubic-bezier(.75, .92, 0, 0);
     transition: all 1.3s cubic-bezier(.75, .92, 0, 0);
+    will-change: transform;
 }
 
 /*effect after hovering larg link*/
@@ -1033,6 +1035,7 @@ img:hover {
 
 .nav-logo {
     display: inline-block;
+    /* will-change: transform; */
 }
 
 /*immage of company*/
@@ -1418,6 +1421,7 @@ nav .main-nav a:hover, nav .main-nav a:active {
     /* margin-right: 5px; */
     /* float:left; */
     display: block;
+    pointer-events: none;
 }
 
 #options li{ 

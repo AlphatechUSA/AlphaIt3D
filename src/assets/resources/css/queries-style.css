@@ -532,7 +532,7 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
     h2 {
         font-size: 20px;
     }
-    h3 {
+    h3,span{
         font-size: 15px;
     }
     .box {

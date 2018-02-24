@@ -22,9 +22,7 @@
     transition: 0.3s all;
     margin: 3px 0px;
     border-radius: 5px;
-    
-    /* color: white; */
-    
+    will-change: transform;
 }
 .services ul {
     /* display: none; */

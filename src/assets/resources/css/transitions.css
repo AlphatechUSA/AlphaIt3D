@@ -46,9 +46,11 @@
 
 #cube .side section::-webkit-scrollbar-track
 {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	/* -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); */
     background-color: black;
     width: 5px;
+    border: 0.5px solid rgb(97, 97, 97);
+    border-left: 0;
 }
 
 #cube .side section::-webkit-scrollbar
@@ -61,12 +63,14 @@
 {
 	background-color: white;
 }
-
 /*end of scroll bar*/
 
 #cube .side section {
-    height: 100%;
-    /* overflow-y: scroll; */
+    position: relative;
+    max-height: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    overflow-y: scroll;
     overflow-x: hidden;
 }
 
@@ -79,6 +83,7 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border: 0.5px solid rgb(97, 97, 97);
+    will-change: transform;
     /* border:18px  outset  #414141; */
 }
 
@@ -103,6 +108,7 @@
     transition: opacity 10s, -webkit-transform 20s; */
     /* transition: transform 20s, opacity 10s; */
     transition: transform 2.5s, opacity 1s, -webkit-transform 2.5s;
+    will-change: transform;
 }
 
 #cube .front {
@@ -136,7 +142,7 @@
 }
 
 
-#cube.show-front {
+#cube .show-front {
     -webkit-transform: translateZ( -320px);
     transform: translateZ( -320px);
     -webkit-transform-origin: 0px 320px 0px;

@@ -28,8 +28,8 @@
     }
     /* immage inside container */
     .immage-boxes .box figure img {
-        width: 250px;
-        height: 200px;
+        width: 50px !important;
+        height: 50px !important;
         border-radius: 10px;
         transform: rotateX(5deg) rotateY(20deg) rotateZ(5deg);
         box-shadow: 5px 5px 20px;
@@ -62,6 +62,7 @@
         margin-left: 5px;
         margin-top: 15px;
         transition: 0.5s all;
+        will-change: transform;
     }
     /* immage inside a slider */
     .ripslider .rip-img {
