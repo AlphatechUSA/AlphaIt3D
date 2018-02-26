@@ -44,10 +44,7 @@
     .immage-boxes .box h3 {
         color: white;
     }
-    /*back to folders button*/
-    .back-to-folders:hover {
-        transform: scale(1.1);
-    }
+
     .back-to-folders {
         /*    position: fixed;*/
         display: block;
@@ -63,6 +60,10 @@
         margin-top: 15px;
         transition: 0.5s all;
         will-change: transform;
+    }
+    /*back to folders button*/
+    .back-to-folders:hover {
+        transform: scale(1.1);
     }
     /* immage inside a slider */
     .ripslider .rip-img {

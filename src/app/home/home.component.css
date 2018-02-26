@@ -34,6 +34,9 @@
         display: inline-block;
     }
     /*--- Mutual properties for 3dElement ---*/
+    .rip-video-container:hover div {
+        will-change: transform;
+    }
     .rip-video-container div {
         position: relative;
         float: left;
@@ -46,7 +49,6 @@
         border-radius: 8%;
         overflow: hidden;
         border-bottom: 2px solid red;
-        will-change: transform;
     }
     .rip-video-container div:hover {
         -webkit-box-shadow: 25px 15px 4px #a0a0a0;
@@ -190,7 +192,7 @@
         font-family: sans-serif;
         font-weight: 300;
         display: block;
-        vertical-align: middle;
+        /* vertical-align: middle; */
     }
     /*only testimonials information*/
     .quote-phrase {
@@ -227,6 +229,9 @@
         /*    background-color: rgba(240, 240, 240, 0.38);*/
     }
     /*immages inside clients section*/
+    #our-clients:hover img {
+        will-change: transform;
+    }
     #our-clients img {
         margin-top: 30px;
         margin-left: 20px;
@@ -239,7 +244,6 @@
         transform: scale(1.55);
         opacity: 0.8;
         background-color:#fff;
-        will-change: transform;
     }
     /*hovering affect on immages inside client section*/
     #our-clients img:hover {

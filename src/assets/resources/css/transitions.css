@@ -12,6 +12,9 @@
     height: 640px;
     position: relative;
     margin: 0px auto;
+    /* Says to browser how in z index (in space) will be shown element's childs
+    In short creates 3d space,with z depth, for childrens
+    */
     -webkit-perspective: 1500px;
     perspective: 1500px;
     -webkit-transition: all 1s cubic-bezier(.75, .92, 0, 0);
@@ -20,12 +23,36 @@
     /*transform rom xarisxian shesruldes*/
     transform: translateZ(0);
     /*transform rom xarisxian shesruldes*/
-    will-change: transform;
 }
 
 #theArt:hover {
     /*    transform: scale(0.8);*/
 }
+
+#threed-cube {
+    margin-top: 100px;
+    padding: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* position: fixed; */
+    /* overflow: hidden; */
+}
+
+#cube {
+    position: relative;
+    opacity: 0;
+    /* opacity: 1; */
+    transform-origin: center;
+    -webkit-transform-style: preserve-3d;
+    /* Says to rowser that this element is in threed and should make transforms i9n 3D*/
+    transform-style: preserve-3d;
+    /* -webkit-transition: opacity 10s, -webkit-transform 20s;
+    transition: opacity 10s, -webkit-transform 20s; */
+    /* transition: transform 20s, opacity 10s; */
+    transition: transform 2.5s, opacity 1s, -webkit-transform 2.5s;
+}
+
 
 /*Scroll bar*/
 
@@ -83,32 +110,7 @@
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border: 0.5px solid rgb(97, 97, 97);
-    will-change: transform;
     /* border:18px  outset  #414141; */
-}
-
-#threed-cube {
-    margin-top: 100px;
-    padding: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    /* position: fixed; */
-    /* overflow: hidden; */
-}
-
-#cube {
-    position: relative;
-    opacity: 0;
-    /* opacity: 1; */
-    transform-origin: center;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    /* -webkit-transition: opacity 10s, -webkit-transform 20s;
-    transition: opacity 10s, -webkit-transform 20s; */
-    /* transition: transform 20s, opacity 10s; */
-    transition: transform 2.5s, opacity 1s, -webkit-transform 2.5s;
-    will-change: transform;
 }
 
 #cube .front {

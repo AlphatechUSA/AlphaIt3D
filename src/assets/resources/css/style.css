@@ -34,18 +34,17 @@ html {
     font-weight: 300;
     text-rendering: optimizeLegibility;
     font-size: 15px;
-    /* overflow: hidden; */
-}
-
-/*documents default style*/
-
-body {
-    height: 100vh;
     overflow: hidden;
 }
 
-/*all sections default styles*/
+/*documents default style*/
+body {
+    height: 100vh;
+    /* Bcouse of this overflov hidden scroll was disabling on some pages */
+    /* overflow: hidden; */
+}
 
+/*all sections default styles*/
 section {
     padding: 10px 0px;
     padding-bottom: 20px;
@@ -362,12 +361,6 @@ Recruitment desk identifies available candidates who meet the requirements, qual
 }
 
 /*round-box container*/
-
-.round-boxes .box:hover {
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
 .round-boxes .box {
     border-radius: 50%;
     width: 200px;
@@ -377,11 +370,17 @@ Recruitment desk identifies available candidates who meet the requirements, qual
     display: inline-block;
     line-height: 200px;
     text-transform: capitalize;
+}
+.round-boxes:hover .box {
     will-change: transform;
 }
 
-/*text inside round box*/
+.round-boxes .box:hover {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+}
 
+/*text inside round box*/
 .round-boxes .box p {
     display: inline-block;
     font-weight: 500;
@@ -1035,7 +1034,6 @@ img:hover {
 
 .nav-logo {
     display: inline-block;
-    /* will-change: transform; */
 }
 
 /*immage of company*/
@@ -1063,7 +1061,6 @@ nav {
 }
 
 /*Immages inside navbar*/
-
 nav img {
     height: 80px;
     /*    border: 2px solid red;*/
@@ -1146,7 +1143,6 @@ nav .main-nav li {
 }
 
 /*icons in navbar*/
-
 nav .main-nav li img {
     height: 35px;
     width: 35px;
@@ -1158,6 +1154,9 @@ nav .main-nav li img {
 }
 
 /*hovering effect on each link in navbar*/
+nav .main-nav:hover  a img, nav .main-nav:hover a i {
+    will-change: transform;
+}
 
 nav .main-nav a:hover img, nav .main-nav a:hover i {
     -webkit-transform: scale(1.2);
@@ -1447,7 +1446,7 @@ nav .main-nav a:hover, nav .main-nav a:active {
     }
 }
 
-@-webkit-keyframes load-cube {
+@keyframes load-cube {
     0% {
         /*        perspective: 500;*/
         -webkit-transform-origin: 500px 0px -1500px;
@@ -1491,7 +1490,6 @@ nav .main-nav a:hover, nav .main-nav a:active {
     animation: 5s cubic-bezier(.32, -0.01, .59, .95) 0s 1 load-cube;
     /* animation: 1s cubic-bezier(.32,-0.01,.59,.95) 0s 1 load-cube; */
 }
-
 /*-------------------------end of What we do-------------------------*/
 
 /*------------------------------------------*/
@@ -1623,8 +1621,19 @@ canvas {
     display: none;
 } */
     
-
 .title-with-subs ul{
     display: none;
     padding-bottom: 10px;
+}
+
+.title-with-subs ul:hover li{
+    will-change: transform;
+}
+
+.title-with-subs ul li{
+    transition: 0.3s all;
+}
+
+.title-with-subs ul li:hover{
+    transform: scale(1.1);
 }

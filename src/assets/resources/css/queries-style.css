@@ -540,7 +540,7 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         font-size: 13px;
     }
     /*--------3dBox---------*/
-    @-webkit-keyframes load-cube {
+    @keyframes load-cube {
         0% {
             -webkit-transform-origin: -10px 0px 0px;
             transform-origin: -10px 0px -800px;

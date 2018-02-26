@@ -1,0 +1,7 @@
+.bullets{
+    list-style: circle;
+}
+
+.bullets li{
+    margin: 20px;
+}

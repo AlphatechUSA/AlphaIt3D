@@ -12,17 +12,12 @@
     padding: 0;
 }
 
-.services ul li:hover{
-    opacity: 0.8;
-    transform: scale(1.1);
-}
 .services ul li{
     list-style: none;
     padding: 5px;
     transition: 0.3s all;
     margin: 3px 0px;
     border-radius: 5px;
-    will-change: transform;
 }
 .services ul {
     /* display: none; */
@@ -35,11 +30,8 @@
 }
 
 /*h4 headings style*/
-
 h4 {
     display: block;
-    /* color: white; */
-    /* text-align: left; */
 }
 
 .services ul a:hover {
