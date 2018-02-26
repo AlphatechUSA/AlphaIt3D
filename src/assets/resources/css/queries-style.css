@@ -405,6 +405,7 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         width: 100%;
         text-align: center;
         float: none;
+        left: 0;
     }
     #options ul {
         display: block;
@@ -414,8 +415,9 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         display: inline-block;
     }
     #options li a {
-        padding: 10px;
-        font-size: 15px;
+        padding: 5px 10px;
+        font-size: 13px;
+        border-radius: 10px;
     }
     #options li :hover {
         -webkit-transform: translateX(0px);
