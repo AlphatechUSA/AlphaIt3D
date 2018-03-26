@@ -28,7 +28,7 @@
         "assets/vendors/js/Projector.js",
         "assets/vendors/js/CanvasRenderer.js",
         "assets/vendors/js/stats.min.js",
-        "assets/vendors/js/bgthreed.js",
+        
         "assets/resources/js/script.js",
         "assets/resources/js/step-by-step-boxes.js"
       ],
