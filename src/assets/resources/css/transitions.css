@@ -15,8 +15,8 @@
     /* Says to browser how in z index (in space) will be shown element's childs
     In short creates 3d space,with z depth, for childrens
     */
-    -webkit-perspective: 1500px;
-    perspective: 1500px;
+    /* -webkit-perspective: 1500px; */
+    perspective: 100000px;
     -webkit-transition: all 1s cubic-bezier(.75, .92, 0, 0);
     transition: all 1s cubic-bezier(.75, .92, 0, 0);
     -webkit-transform: translateZ(0);
@@ -25,18 +25,12 @@
     /*transform rom xarisxian shesruldes*/
 }
 
-#theArt:hover {
-    /*    transform: scale(0.8);*/
-}
-
 #threed-cube {
     margin-top: 100px;
     padding: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    /* position: fixed; */
-    /* overflow: hidden; */
 }
 
 #cube {
@@ -107,9 +101,10 @@
     z-index: 10000;
     /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(255, 255, 255, 0.4))); */
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0,0.1)); */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border: 0.5px solid rgb(97, 97, 97);
+    border: 1px solid black;
     /* border:18px  outset  #414141; */
 }
 

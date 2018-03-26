@@ -542,7 +542,7 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         font-size: 13px;
     }
     /*--------3dBox---------*/
-    @keyframes load-cube {
+    /* @keyframes load-cube {
         0% {
             -webkit-transform-origin: -10px 0px 0px;
             transform-origin: -10px 0px -800px;
@@ -553,7 +553,7 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
             -webkit-transform: rotateX(580deg) rotateY(80deg);
             transform: rotateX(580deg) rotateY(80deg);
         }
-    }
+    } */
     #theArt {
         width: 400px;
         height: 400px;

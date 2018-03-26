@@ -60,7 +60,7 @@ h2 {
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 10px;
-    color: #870000;
+    color: #003973;
 }
 
 /*h3 headings style*/
@@ -142,6 +142,7 @@ h3{
     line-height: 145%;
     font-size: 15px;
     opacity: 0.8;
+    text-align: left;
     /* -webkit-box-shadow: 5px 5px 10px #989898; */
     /* box-shadow: 5px 5px 10px #989898; */
 }
@@ -1448,7 +1449,22 @@ nav .main-nav a:hover, nav .main-nav a:active {
 
 @keyframes load-cube {
     0% {
-        /*        perspective: 500;*/
+        /* -webkit-transform-origin: 0px 0px -1500px; */
+        transform-origin: center center ;
+        /* -webkit-transform: rotateX(-50deg); */
+        transform: scale(-0.2)   rotateX(-0deg);
+        /* will-change: transform; */
+
+    }
+    90% {
+        /* -webkit-transform:rotateY(0deg) scale(1); */
+        transform: scale(1)    rotateX(-360deg);
+    }
+} 
+
+
+/* @keyframes load-cube {
+    0% {
         -webkit-transform-origin: 500px 0px -1500px;
         transform-origin: 500px 0px -1500px;
         -webkit-transform: rotateX(50deg) rotateY(10deg);
@@ -1458,7 +1474,7 @@ nav .main-nav a:hover, nav .main-nav a:active {
         -webkit-transform: rotateX(500deg) rotateY(100deg);
         transform: rotateX(500deg) rotateY(100deg);
     }
-}
+} */
 
 /*
 @-webkit-keyframes load-cube{

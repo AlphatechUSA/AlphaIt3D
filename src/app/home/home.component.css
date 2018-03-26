@@ -216,13 +216,6 @@
         font-weight: 400;
         /* height: 30px; */
     }
-    /*who we are text.It deletes default margins and shadow of boxs.without it responsive design dont looks good*/
-    #who-we-are .box {
-        margin: 0 0;
-        width: 90%;
-        -webkit-box-shadow: 0 0 0;
-        box-shadow: 0 0 0;
-    }
     /*--------Clients Section--------*/
     /*clientes section*/
     #our-clients {
