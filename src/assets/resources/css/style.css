@@ -57,10 +57,12 @@ h2 {
     text-align: center;
     text-transform: capitalize;
     cursor: default;
-    font-size: 25px;
-    font-weight: 500;
+    font-size: 35px;
+    font-weight: 600;
     margin-bottom: 10px;
+    letter-spacing: 3px;
     color: #003973;
+    text-shadow: 2px 2px 2px #fff;
 }
 
 /*h3 headings style*/
@@ -71,7 +73,7 @@ h3{
     cursor: default;
     margin: 5px auto;
     font-weight: 300;
-    font-size: 17px;
+    font-size: 22px;
     word-spacing: 2px;
     letter-spacing: 1px;
     line-height: 145%;
@@ -138,10 +140,9 @@ h3{
     text-rendering: optimizeLegibility;
     word-spacing: 2px;
     letter-spacing: 1px;
-    font-weight: 300;
-    line-height: 145%;
+    font-weight: 500;
+    line-height: 150%;
     font-size: 15px;
-    opacity: 0.8;
     text-align: left;
     /* -webkit-box-shadow: 5px 5px 10px #989898; */
     /* box-shadow: 5px 5px 10px #989898; */
@@ -371,6 +372,7 @@ Recruitment desk identifies available candidates who meet the requirements, qual
     display: inline-block;
     line-height: 200px;
     text-transform: capitalize;
+    text-align: center;
 }
 .round-boxes:hover .box {
     will-change: transform;
@@ -653,6 +655,7 @@ span {
     display: block;
     text-align: left;
     font-size: 100%;
+    overflow: hidden;
 }
 
 /*text inside sections that has bacground color(Red)*/
@@ -1640,6 +1643,10 @@ canvas {
 .title-with-subs ul{
     display: none;
     padding-bottom: 10px;
+    margin: 0 auto;
+    width: max-content;
+    max-width: 100%;
+    height: auto;
 }
 
 .title-with-subs ul:hover li{

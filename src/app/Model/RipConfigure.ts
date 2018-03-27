@@ -1,13 +1,14 @@
 import { updateCube } from "./cropper";
-import { AfterViewInit } from "@angular/core/src/metadata/lifecycle_hooks";
-
+import { AfterViewInit } from "@angular/core";
 
 export class RipConfigure implements AfterViewInit {
     ngAfterContentInit() {
         updateCube();
         // displays and hides container after h2(that is in title-with-subs container)
         $(".title-with-subs").on("click", ".box", function () {
-            $(this).find('ul').each(function () { $(this).slideToggle(); });
+            $(this).find('ul').each(function () {
+                $(this).slideToggle();
+            });
         });
     }
 

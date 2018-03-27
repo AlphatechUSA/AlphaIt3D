@@ -125,6 +125,8 @@
     #what-we-do i img {
         width: 60px;
         margin-top: 10px;
+        display: block;
+        margin: 0 auto;
     }
     /*icon of what we do section(immage is inside i tag)*/
     #what-we-do i {
