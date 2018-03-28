@@ -140,7 +140,7 @@ h3{
     text-rendering: optimizeLegibility;
     word-spacing: 2px;
     letter-spacing: 1px;
-    font-weight: 500;
+    font-weight: 500 !important;
     line-height: 150%;
     font-size: 15px;
     text-align: left;
@@ -1610,9 +1610,10 @@ canvas {
 }
 .title-with-subs h3:after{
     content: '\261e';
-    display: inline-block;
+    /* display: inline-block; */
+    display:block;
     font-size: 50px;
-    float: right;
+    /* float: right; */
     padding-right:20px; 
 }
 .title-with-subs h3{
