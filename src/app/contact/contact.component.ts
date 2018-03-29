@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { routerTransition } from '../Model/cropper';
 import { RipConfigure } from '../Model/RipConfigure';
-// import "../../assets/vendors/js/gmaps";
 declare var GMaps: any;
-
 
 @Component({
   selector: 'app-contact',
@@ -19,7 +17,6 @@ export class ContactComponent extends RipConfigure implements OnInit {
   }
 
   ngOnInit() {
-
   }
 
   ngAfterViewInit() {
@@ -113,6 +110,4 @@ export class ContactComponent extends RipConfigure implements OnInit {
       lng: 8.512408
     });
   }
-
-
 }

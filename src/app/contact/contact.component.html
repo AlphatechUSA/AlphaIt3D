@@ -37,47 +37,29 @@
           <div class="contact-img header-img"></div>
           <div class="row">
             <h2 class="white">Send us a message</h2>
-            <form>
+            <form action="https://formspree.io/roma.sumbadze@gmail.com"
+            method="POST" target="_blank">
               <div>
                 <label for="fname">FirstName</label>
                 <br>
-                <input type="text" name="fname" placeholder="First name">
+                <input type="text" name="first-name" placeholder="First name">
               </div>
 
               <div>
                 <label for="fname">LastName</label>
                 <br>
-                <input type="text" name="lname" placeholder="Last name">
+                <input type="text" name="last-name" placeholder="Last name">
               </div>
 
               <div>
                 <label for="fname">Email</label>
                 <br>
-                <input type="text" name="bmail" placeholder="Business Email">
+                <input type="text" name="e-mail" placeholder="Business Email">
               </div>
-
-              <!-- <div>
-                <label for="fname">Phone Number</label>
-                <br>
-                <input type="text" name="pnumber" placeholder="Phone Number">
-              </div> -->
-
-              <!-- <div>
-                <label for="fname">Company Name</label>
-                <br>
-                <input type="text" name="cname" placeholder="Company Name">
-              </div> -->
-
-              <!-- <div>
-                <label for="fname">Job Title</label>
-                <br>
-                <input type="text" name="jtitle" placeholder="Job Title">
-              </div> -->
-
               <div class="textarea-container">
                 <label for="fname">What are you interested in?</label>
                 <br>
-                <textarea placeholder="What are you interested in?"></textarea>
+                <textarea placeholder="What are you interested in?" name="text"></textarea>
               </div>
               <input class="send-btn" type="submit">
             </form>
