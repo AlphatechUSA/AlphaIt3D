@@ -37,32 +37,50 @@
           <div class="contact-img header-img"></div>
           <div class="row">
             <h2 class="white">Send us a message</h2>
-            <form action="https://formspree.io/roma.sumbadze@alphait.us"
-            method="POST">
+            <h4 style="color:red" *ngIf="!f.valid && sendClicked">Please fill in all fileds</h4>
+            <form (ngSubmit)="onSend(f)" #f="ngForm">
+
               <div>
-                <label for="fname">FirstName</label>
+                <label for="first-name">*FirstName</label>
+                <!-- <span class="error" *ngIf="!fName.valid && fName.touched">Please fill First Name</span> -->
                 <br>
-                <input type="text" name="first-name" placeholder="First name">
+                <input type="text" name="first-name" placeholder="First name" ngModel required #fName="ngModel">
+                <br>
               </div>
 
               <div>
-                <label for="fname">LastName</label>
+                <label for="last-name">*LastName</label>
+                <!-- <span class="error" *ngIf="!fLastName.valid && fLastName.touched">Please fill Last Name</span> -->
                 <br>
-                <input type="text" name="last-name" placeholder="Last name">
+                <input type="text" name="last-name" placeholder="Last name" ngModel required #fLastName="ngModel">
               </div>
 
               <div>
-                <label for="fname">Email</label>
+                <label for="e-mail">*Email</label>
+                <span class="error" *ngIf="!fEmail.valid && fEmail.touched">Please fill in correct Email</span>
                 <br>
-                <input type="text" name="e-mail" placeholder="Business Email">
+                <input type="text" name="e-mail" placeholder="Business Email" ngModel email required #fEmail="ngModel">
               </div>
+
               <div class="textarea-container">
-                <label for="fname">What are you interested in?</label>
+                <label for="text">*What are you interested in?</label>
+                <!-- <span class="error" *ngIf="!fText.valid && fText.touched">Please fill in your questions</span> -->
                 <br>
-                <textarea placeholder="What are you interested in?" name="text"></textarea>
+                <textarea placeholder="What are you interested in?" name="text" ngModel required #fText="ngModel"></textarea>
               </div>
-              <input class="send-btn" type="submit">
+              <!-- <input class="send-btn" type="submit"> -->
+              <button class="send-btn" type="submit" >Send</button>
             </form>
+            
+            <h3 *ngIf="submited;else notSent">
+              <i class="ion-ios-checkmark-outline" style="color:green;font-size:200%"></i>
+              <br>Thank you<br>Mail has been sent
+            </h3>
+            <ng-template #notSent>
+              <h3 *ngIf="submited">
+                <i class="ion-ios-close-outline" style="color:red;font-size:200%"></i>
+                <br>Sorry Mail was not Sent :(</h3>
+            </ng-template>
           </div>
         </section>
         <!---end of Contact_Form Section-->
@@ -157,9 +175,9 @@
               <ul>
                 <p>
                   Plot no. ITC-15,
-                  <br>IT Park, 
-                  <br>Sector 67, 
-                  <br>Mohali 160062 
+                  <br>IT Park,
+                  <br>Sector 67,
+                  <br>Mohali 160062
                   <br> Phone: +91-0172- 506 3856
                   <br> E-mail :- alphaindia@alphait.us
                 </p>
@@ -218,7 +236,8 @@
               Career Opportunities With Alpha Technologies Inc.
               <br> Please send us a cover letter & resume outlining your job skills, employment history & educational background.
               We will contact if there is any suitable opening for you.</p>
-            <a href="mailto:navita@alphait.us?cc=jack@alphait.us&subject=Resume%20From%20Alphait.us&body=Resume submitted from alphait.us website" class="larg-link">Send your resume now</a>
+            <a href="mailto:navita@alphait.us?cc=jack@alphait.us&subject=Resume%20From%20Alphait.us&body=Resume submitted from alphait.us website"
+              class="larg-link">Send your resume now</a>
           </div>
         </section>
         <!---end of Work_with_us Section-->

@@ -35,7 +35,7 @@ form div{
 }
 
 /*label for inputs*/
-form label{
+form label,.error{
     padding-left: 10px;
     font-size: 80%;
     padding-bottom: 5px;
@@ -43,7 +43,10 @@ form label{
     font-weight: 300;
     color: white;
 }
-
+.error{
+    font-weight: 600;
+    color: red!important;
+}
 /*container,row of label and input containers(There is 2 inout in one line,in one filedset)*/
 fieldset{
     width: 100%;
@@ -76,6 +79,9 @@ textarea{
 }
 
 /*send button of form*/
+.send-btn:disabled{
+    background-color: grey;
+}
 .send-btn{
     display: block;
     float: none;
@@ -85,13 +91,10 @@ textarea{
     height: auto !important;
     background-color: #006FA1;
     color: white;
-    padding: 0px;
+    padding: 10px;
+    border-radius: 10px;
     transition: all 1.3s cubic-bezier(.75,.92,0,0);
-}
-
-/*hover affect of send button*/
-.send-btn:hover{
-        background-color: #00b0ff;
+    cursor: pointer;
 }
 /*--------end of Form Section--------*/
 
@@ -194,6 +197,10 @@ textarea{
     height: 200px;
     margin-bottom: 40px;
     border-radius: 20px;
+}
+
+input.ng-touched.ng-invalid,textarea.ng-touched.ng-invalid{
+    border: 1px solid red;
 }
 /*--------end of Our-Location Section--------*/
 /*******************end of Contact styles*******************/

@@ -29,6 +29,8 @@ import { PersonalComputingComponent } from './personal-computing/personal-comput
 import { SequrityComplianceComponent } from './sequrity-compliance/sequrity-compliance.component';
 import { ItTrainingComponent } from './it-training/it-training.component';
 import { InovationComponent } from './inovation/inovation.component';
+import { HttpModule } from '@angular/http';
+import { FormsModule } from '@angular/forms';
 
 
 const ripRoutes:Routes=[
@@ -84,7 +86,9 @@ const ripRoutes:Routes=[
     InovationComponent
   ],
   imports: [
-    RouterModule.forRoot(ripRoutes),    
+    RouterModule.forRoot(ripRoutes),
+    HttpModule,
+    FormsModule,
     BrowserModule,
     BrowserAnimationsModule
   ],
