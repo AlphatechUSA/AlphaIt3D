@@ -6,9 +6,23 @@ export class RipConfigure implements AfterViewInit {
         updateCube();
         // displays and hides container after h2(that is in title-with-subs container)
         $(".title-with-subs").on("click", ".box", function () {
-            $(this).find('ul').each(function () {
-                $(this).slideToggle();
-            });
+            var toOpen = $(this).find('ul');
+            // if ul of clicked box is already opende
+            if (toOpen.hasClass('opened')) {
+                toOpen.slideUp();
+                toOpen.removeClass('opened');
+            }
+            // if clicked element wasnot opened
+            else {
+                // close opened element
+                $(this).closest(".title-with-subs").find('.opened').each(function () {
+                    $(this).removeClass('opened');
+                    $(this).slideToggle();
+                });
+                // opened clicked one
+                toOpen.addClass('opened');
+                toOpen.slideToggle();
+            }
         });
     }
 

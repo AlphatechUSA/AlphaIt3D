@@ -131,7 +131,6 @@
     /*icon of what we do section(immage is inside i tag)*/
     #what-we-do i {
         font-size: 400%;
-        color: #634730;
     }
     /*what we do box container*/
     #what-we-do .box {
@@ -164,13 +163,17 @@
         /*    min-height: 300px;*/
     }
     /*text informations (line items) within methodology section*/
+    #methodology ul {
+        width: 70%;
+    }
     #methodology li {
         list-style: none;
         margin-top: 10px;
+        display: table;
     }
     /*icons within methodology section*/
     #methodology ul i {
-        display: inline-block;
+        display: table-cell;
         font-size: 20px;
     }
     /*--------end of Our-Methodology Section--------*/
