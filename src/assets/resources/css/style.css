@@ -372,8 +372,7 @@ Recruitment desk identifies available candidates who meet the requirements, qual
     height: 200px;
     background-color: rgba(0, 152, 208, 0.81);
     margin: 0px 10px;
-    display: inline-block;
-    line-height: 200px;
+    display: inline-table;
     text-transform: capitalize;
     text-align: center;
 }
@@ -388,7 +387,7 @@ Recruitment desk identifies available candidates who meet the requirements, qual
 
 /*text inside round box*/
 .round-boxes .box p {
-    display: inline-block;
+    display: table-cell;
     font-weight: 500;
     color: white;
     vertical-align: middle;
@@ -1033,13 +1032,11 @@ img:hover {
 .icon-gallery {
     background-image: -webkit-linear-gradient(bottom, rgba(162, 80, 95, 0.50), rgba(162, 80, 95, 0.10));
 }
-
-/*container of logo arrow and text*/
-
 .nav-logo {
     display: inline-block;
 }
 
+/*container of logo arrow and text*/
 /*immage of company*/
 
 .nav-logo-native:hover {
@@ -1118,6 +1115,7 @@ nav img {
 
 /*navbar links container*/
 .main-nav {
+    display: inline-block;
     float: right;
     height: auto;
     padding: 10px;
@@ -1223,7 +1221,7 @@ nav .main-nav a:hover, nav .main-nav a:active {
 /*icon that appears for tablets and mobiles(as default its hidden)*/
 
 .mobile-nav-icon {
-    display: inline-block;
+    display: none;
     color: black;
     font-size: 350%;
     margin-right: 50px;
@@ -1623,13 +1621,13 @@ canvas {
 }
 .title-with-subs .box{
     width: 100%;
-    padding: 0;
+    padding: 15px;
     cursor: pointer;
 }
 
 .title-with-subs ul{
     display: none;
-    padding: 20px;
+    /* padding: 10px 10px; */
     margin: 0 auto;
     width: max-content;
     max-width: 100%;

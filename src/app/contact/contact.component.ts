@@ -13,8 +13,8 @@ declare var GMaps: any;
   host: { '[@routerTransition]': '' }
 })
 export class ContactComponent extends RipConfigure implements OnInit {
-  private submited: boolean;
-  private sendClicked:boolean;
+  submited: boolean;
+  sendClicked:boolean;
   
   constructor(private http: Http) {
     super();

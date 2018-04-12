@@ -12,8 +12,7 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
 /*******************end of General styles*******************/
 
 @media only screen and (max-width: 2560px) {
-    .main-nav {
-      
+    /* .main-nav {
         display: none;
         opacity: 0.99;
         width: 100%;
@@ -21,9 +20,6 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         background-color: white;
         padding: 50px 0px;
         text-align: center;
-        
-        /* -webkit-box-shadow: 5px 5px 20px #989898; */
-        /* box-shadow: 5px 5px 20px #989898; */
     }
     
     nav .main-nav li i {
@@ -38,7 +34,7 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         font-size: 300%;
         margin-right: 25px;
     }
-
+*/
     #options {
         left: 10px;
         width: 300px;
@@ -51,7 +47,6 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         font-size: 25px;
         padding: 10px;
     }
-    
     /*--------3dBox---------*/
     #theArt {
         width: 1100px;
@@ -207,7 +202,6 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         -webkit-transform-origin: -90px 320px 0px;
         transform-origin: -90px 320px 0px;
     }
-    
     /*information to swipe for mobile phones(when table is too larg for screen)*/
     .swipe-text {
         display: block;
@@ -215,6 +209,7 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
 }
 
 @media only screen and (max-width: 1200px) {}
+
 @media only screen and (max-width: 1440px) {
     #theArt {
         width: 550px;
@@ -318,6 +313,21 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         box-shadow: 5px 5px 20px #989898;
     }
      */
+    /*---navbdar---*/
+    #navbar {
+        padding: 0px 0px;
+    }
+    .main-nav {
+        display: none;
+        opacity: 0.99;
+        width: 100%;
+        margin-top: 0px;
+        background-color: white;
+        padding: 50px 0px;
+        text-align: center;
+        -webkit-box-shadow: 5px 5px 20px #989898;
+        box-shadow: 5px 5px 20px #989898;
+    }
     /*Icons in navbar*/
     nav .main-nav li i {
         width: 90px;
@@ -325,17 +335,18 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         line-height: 90px;
         font-size: 250%;
     }
-    /*submenus*/
-    .scroll-bar {
-        top: 335px;
-    }
     .mobile-nav-icon {
         display: inline-block;
+        line-height: 100px;
     }
     /*Scroll-bar*/
     .main-nav li:hover .scroll-bar {
         visibility: hidden;
         opacity: 0;
+    }
+    /*submenus*/
+    .scroll-bar {
+        top: 335px;
     }
     /*--------end of navbar--------*/
     /*******************end of General styles*******************/
@@ -375,21 +386,21 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
     /*--------end of Logo---------*/
     /*--------navbar--------*/
     .main-nav {
-        /* display: none;
+        display: none;
         width: 100%;
         margin-top: 0px;
         background-color: white;
         text-align: center;
         -webkit-box-shadow: 5px 5px 20px #989898;
-        box-shadow: 5px 5px 20px #989898; */
+        box-shadow: 5px 5px 20px #989898;
     }
     /*Icons in navbar*/
-    /* nav .main-nav li i {
+    nav .main-nav li i {
         width: 90px;
         height: 90px;
         line-height: 90px;
         font-size: 250%;
-    } */
+    }
     /*submenus*/
     .scroll-bar {
         top: 400px;
@@ -536,7 +547,7 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
     h2 {
         font-size: 20px;
     }
-    h3,span{
+    h3, span {
         font-size: 15px;
     }
     .box {
@@ -624,6 +635,36 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         -webkit-transform-origin: -90px 200px 0px;
         transform-origin: -90px 200px 0px;
     }
+    /*---navbar---*/
+    .main-nav {
+        display: none;
+        width: 100%;
+        margin-top: 0px;
+        background-color: white;
+        padding: 10px 0px;
+        text-align: center;
+        -webkit-box-shadow: 5px 5px 20px #989898;
+        box-shadow: 5px 5px 20px #989898;
+    }
+    /*Icons in navbar*/
+    nav .main-nav li i {
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        font-size: 250%;
+    }
+    /*submenus*/
+    .scroll-bar {
+        top: 335px;
+    }
+    .mobile-nav-icon {
+        display: inline-block;
+        line-height: 55px;
+        font-size: 250%;
+        margin-right: 25px;
+    }
+    /*--------end of navbar--------*/
+    
 }
 
 @media only screen and (max-width: 375px) {
