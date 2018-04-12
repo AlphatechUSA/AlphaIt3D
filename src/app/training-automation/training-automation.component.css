@@ -1,13 +1,7 @@
 /*******************Training_And_inovation styles*******************/
 
 /*section of larg link buttons((training and inovation))*/
-
-.large-buttons {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url(/assets/resources/img/pics/career.jpg);
-}
-
 /*links container(training and inovation)*/
-
 .large-buttons ul {
     display: block;
     text-align: center;
@@ -24,6 +18,7 @@
     background-color: #1C6BA0;
     border-radius: 20px;
     font-weight: 600;
+    font-size: 150%;
     color: white;
     transition: all 1.3s cubic-bezier(.75, .92, 0, 0);
     cursor: pointer;
@@ -55,6 +50,7 @@
         height: 150px;
         line-height: 150px;
         margin: 10px 0px;
+        font-size: 120%;
     }
 }
 
@@ -67,7 +63,7 @@
             height: 120px;
             line-height: 120px;
             margin: 10px 0px;
-            font-size: 80%;
+            font-size: 100%;
         }
 }
 

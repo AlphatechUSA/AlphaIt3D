@@ -24,7 +24,7 @@ form input{
     border-radius: 10px;
     padding: 15px;
     font-weight: 300;
-    font-size: 80%;
+    font-size: 100%;
     border: 1px solid #006FA1;
 }
 /*containers for input and label */
@@ -85,9 +85,8 @@ textarea{
 .send-btn{
     display: block;
     float: none;
-    margin: 0 auto;
-    margin-top: 0px;
-    width: 200px;
+    margin: 5px auto;
+    width: 90%;
     height: auto !important;
     background-color: #006FA1;
     color: white;

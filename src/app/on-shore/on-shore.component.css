@@ -12,23 +12,6 @@
     padding: 0;
 }
 
-.services ul li{
-    list-style: none;
-    padding: 5px;
-    transition: 0.3s all;
-    margin: 3px 0px;
-    border-radius: 5px;
-}
-.services ul {
-    /* display: none; */
-    margin-top: 10px;
-    
-}
-
-.services ul h3 {
-    /* color: black; */
-}
-
 /*h4 headings style*/
 h4 {
     display: block;

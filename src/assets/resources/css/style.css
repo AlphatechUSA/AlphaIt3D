@@ -52,6 +52,8 @@ section {
 
 /*h2 headings style*/
 h2,h3,h4{
+    padding-left:20px;
+    padding-right:20px;
     text-shadow: 2px 2px 5px #fff;
 }
 h2 {
@@ -184,7 +186,9 @@ h3{
 /*---------------------- Beautiful inline list items  ----------------------*/
 
 /*each option in options list*/
-
+.options{
+    margin: 20px 0;
+}
 .options li {
     width: auto;
     display: inline-block;
@@ -303,8 +307,7 @@ Recruitment desk identifies available candidates who meet the requirements, qual
     width: 90%;
     vertical-align: middle;
     background-color: cadetblue;
-    margin: 10px auto;
-    ;
+    margin: 15px auto;
     display: block;
     padding: 10px;
 }
@@ -583,7 +586,7 @@ a,li{
 
 .larg-link {
     display: block;
-    margin: 10px auto;
+    margin: 20px auto;
     padding: 15px;
     width: 80%;
     font-size: 100%;
@@ -1106,7 +1109,6 @@ nav img {
 }
 
 /*Rotating globe animation*/
-
 .globe-animation {
     position: absolute;
     left: 117px;
@@ -1115,7 +1117,6 @@ nav img {
 }
 
 /*navbar links container*/
-
 .main-nav {
     float: right;
     height: auto;
@@ -1622,26 +1623,13 @@ canvas {
 }
 .title-with-subs .box{
     width: 100%;
-    padding: 0px; 
+    padding: 0;
     cursor: pointer;
 }
-/* 
-.title-with-subs .box li:before {
-    display: block;
-    margin: 5px auto;
-    width: 5px;
-    height: 5px;
-    content: " ";
-    border-radius: 50%;
-    background-color: #9d9999;
-} */
-/* .title-with-subs .box li:first-child:before {
-    display: none;
-} */
-    
+
 .title-with-subs ul{
     display: none;
-    padding-bottom: 10px;
+    padding: 20px;
     margin: 0 auto;
     width: max-content;
     max-width: 100%;
@@ -1649,16 +1637,17 @@ canvas {
     height: auto;
 }
 
-.title-with-subs ul:hover li{
+.title-with-subs ul li{
+    list-style: none;
+    padding: 5px;
+    transition: 0.3s all;
+    margin: 3px 0px;
+    transition: 0.3s all;
     will-change: transform;
 }
 
-.title-with-subs ul li{
-    transition: 0.3s all;
-}
-
 .title-with-subs ul li:hover{
-    transform: scale(1.1);
+    transform: scale(1.02);
 }
 
 .icon-with-text{
