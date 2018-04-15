@@ -82,8 +82,9 @@ export class GalleryComponent extends RipConfigure implements OnInit {
           'assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/India.jpg',
           'assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/india2.jpg'
         ]),
-        new GalleryFolder("assets/resources/img/gallery/Upcoming-Building-in-Republic-of-Georgia/Georgia.JPG", "Upcoming Building in Republic of Georgia", [
-          'assets/resources/img/gallery/Upcoming-Building-in-Republic-of-Georgia/Georgia.JPG'
+        new GalleryFolder("assets/resources/img/gallery/Upcoming-Building-in-Republic-of-Georgia/AlphaHoolding.jpg", "Upcoming Building in Republic of Georgia", [
+          'assets/resources/img/gallery/Upcoming-Building-in-Republic-of-Georgia/AlphaHoolding.jpg',
+          'assets/resources/img/gallery/Upcoming-Building-in-Republic-of-Georgia/reception.jpg',
         ])
       ]),
 
