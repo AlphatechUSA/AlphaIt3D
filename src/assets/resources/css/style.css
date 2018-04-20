@@ -38,6 +38,7 @@ html {
 }
 
 /*documents default style*/
+
 body {
     height: 100vh;
     /* Bcouse of this overflov hidden scroll was disabling on some pages */
@@ -45,17 +46,20 @@ body {
 }
 
 /*all sections default styles*/
+
 section {
     padding: 10px 0px;
     padding-bottom: 20px;
 }
 
 /*h2 headings style*/
-h2,h3,h4{
-    padding-left:20px;
-    padding-right:20px;
-    text-shadow: 2px 2px 5px #fff;
+
+h2, h3, h4 {
+    padding-left: 20px;
+    padding-right: 20px;
+    text-shadow: 1px 1px 1px #fff;
 }
+
 h2 {
     margin-top: 10px;
     text-align: center;
@@ -69,7 +73,8 @@ h2 {
 }
 
 /*h3 headings style*/
-h3{
+
+h3 {
     display: block;
     text-align: center;
     cursor: default;
@@ -82,6 +87,14 @@ h3{
     padding: 0 10px;
     color: white;
     text-transform: capitalize;
+}
+
+.title-with-subs .box:nth-child(2n) h3 {
+    color: #870000;
+}
+
+.title-with-subs .box:nth-child(2n+1) h3 {
+    color: #45B649;
 }
 
 /*adds white color to text*/
@@ -124,9 +137,12 @@ h3{
 .box {
     /*    visibility: hidden;*/
     /* background-color: white; */
-    background: #3a6186;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #89253e, #3a6186);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #89253e, #3a6186);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: white;
     /* color: #7c1212     */
     position: relative;
@@ -146,6 +162,7 @@ h3{
     line-height: 150%;
     font-size: 15px;
     text-align: left;
+    border-radius: 10%;
     /* -webkit-box-shadow: 5px 5px 10px #989898; */
     /* box-shadow: 5px 5px 10px #989898; */
 }
@@ -186,9 +203,11 @@ h3{
 /*---------------------- Beautiful inline list items  ----------------------*/
 
 /*each option in options list*/
-.options{
+
+.options {
     margin: 20px 0;
 }
+
 .options li {
     width: auto;
     display: inline-block;
@@ -201,11 +220,12 @@ h3{
     list-style: none;
     border: 1px solid #dbdbdb;
     border-radius: 10px;
-   
-    background: #3a6186;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #89253e, #3a6186);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #89253e, #3a6186);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* background-color: white; */
     /* color: black; */
 }
@@ -220,11 +240,12 @@ h3{
     width: 95%;
     ;
     /* background-image: -webkit-linear-gradient(top, #7c1212, #d63542); */
-
-    background: #3a6186;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #89253e, #3a6186);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #89253e, #3a6186);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     /* color: white; */
     margin: 20px auto;
     padding: 0px;
@@ -366,6 +387,7 @@ Recruitment desk identifies available candidates who meet the requirements, qual
 }
 
 /*round-box container*/
+
 .round-boxes .box {
     border-radius: 50%;
     width: 200px;
@@ -376,6 +398,7 @@ Recruitment desk identifies available candidates who meet the requirements, qual
     text-transform: capitalize;
     text-align: center;
 }
+
 .round-boxes:hover .box {
     will-change: transform;
 }
@@ -386,6 +409,7 @@ Recruitment desk identifies available candidates who meet the requirements, qual
 }
 
 /*text inside round box*/
+
 .round-boxes .box p {
     display: table-cell;
     font-weight: 500;
@@ -396,38 +420,45 @@ Recruitment desk identifies available candidates who meet the requirements, qual
 
 /*----------------------end of boxes with circele shape and text in center----------------------*/
 
-/*---------------------- Profiles-Lists Section ----------------------*/
+/*--------Profiles-Lists Section--------*/
 
-#profiles-list li:nth-child(odd) {
-    float: left;
-    background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0)));
-    background: linear-gradient(to right, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
-}
-
-#profiles-list li:nth-child(even) {
-    float: right;
-    background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0.15)), to(rgba(0, 0, 0, 0)));
-    background: linear-gradient(to left, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0) 100%);
-}
+/*each profile fro profile list*/
 
 #profiles-list li {
-    width: 51%;
-    /*    float: left;*/
-    margin: 10px auto;
+    width: 80%;
+    margin: 5px 5px;
     padding: 20px;
-    margin-left: 20%;
-    margin-right: 20%;
     text-align: center;
     list-style: none;
     border: 1px solid #dbdbdb;
     border-radius: 10px;
     font-weight: 500;
-    font-size: 80%;
-    color:white;
-
+    font-size: 100%;
+    /* background-color: white; */
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #89253e, #3a6186);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #89253e, #3a6186);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-/*---------------------- end of Profiles-Lists Section ----------------------*/
+/*profile that is odd(using to make nice affect)*/
+
+#profiles-list li:nth-child(odd) {
+    float: left;
+    /* background-color: white; */
+    /* background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0.7) 100%);  */
+}
+
+/*profile that is even(using to make nice affect)*/
+
+#profiles-list li:nth-child(even) {
+    float: right;
+    /* background: linear-gradient(to left, rgba(255, 255, 255, 1) 0%,rgba(255, 255, 255, 0.7) 100%);  */
+}
+
+/*--------end of Profiles-Lists Section--------*/
 
 /*---------------------- Step-by-step boxes Section ----------------------*/
 
@@ -517,7 +548,7 @@ Recruitment desk identifies available candidates who meet the requirements, qual
 /*contaier for each Data item (with action items and output)*/
 
 .stages-phase-info {
-    padding: 20px;
+    padding: 5px;
     position: absolute;
     left: 50%;
     -webkit-transform: translateX(-50%);
@@ -548,6 +579,10 @@ Recruitment desk identifies available candidates who meet the requirements, qual
 
 /*li in phases-info box ul's */
 
+.stages-phase-info .box {
+    margin: 0px;
+}
+
 .stages-phase-info .box li {
     text-align: left;
     color: white;
@@ -575,7 +610,7 @@ a:focus {
 
 /*links default style*/
 
-a,li{
+a, li {
     cursor: pointer;
     color: white;
     text-decoration: none;
@@ -613,7 +648,7 @@ p {
     text-rendering: optimizeLegibility;
     word-spacing: 2px;
     letter-spacing: 1px;
-    font-weight: 300;
+    font-weight: 500!important;
     /* font-size: 15px; */
     line-height: 145%;
 }
@@ -1032,11 +1067,14 @@ img:hover {
 .icon-gallery {
     background-image: -webkit-linear-gradient(bottom, rgba(162, 80, 95, 0.50), rgba(162, 80, 95, 0.10));
 }
+
 .nav-logo {
     display: inline-block;
+    float: left;
 }
 
 /*container of logo arrow and text*/
+
 /*immage of company*/
 
 .nav-logo-native:hover {
@@ -1059,9 +1097,11 @@ nav {
     box-shadow: 5px 5px 20px #989898;
     -webkit-transition: all 3s;
     transition: all 3s;
+    text-align: center;
 }
 
 /*Immages inside navbar*/
+
 nav img {
     height: 80px;
     /*    border: 2px solid red;*/
@@ -1106,6 +1146,7 @@ nav img {
 }
 
 /*Rotating globe animation*/
+
 .globe-animation {
     position: absolute;
     left: 117px;
@@ -1114,9 +1155,11 @@ nav img {
 }
 
 /*navbar links container*/
+
 .main-nav {
     display: inline-block;
-    float: right;
+    margin: 0 auto;
+    width: auto;
     height: auto;
     padding: 10px;
 }
@@ -1129,7 +1172,7 @@ nav .main-nav a {
     text-decoration: none;
     text-align: center;
     height: 100%;
-    width: 101px;
+    width: 115px;
     -webkit-transition: all 0.3s cubic-bezier(.75, .92, 0, 0);
     transition: all 0.3s cubic-bezier(.75, .92, 0, 0);
 }
@@ -1143,6 +1186,7 @@ nav .main-nav li {
 }
 
 /*icons in navbar*/
+
 nav .main-nav li img {
     height: 35px;
     width: 35px;
@@ -1154,7 +1198,8 @@ nav .main-nav li img {
 }
 
 /*hovering effect on each link in navbar*/
-nav .main-nav:hover  a img, nav .main-nav:hover a i {
+
+nav .main-nav:hover a img, nav .main-nav:hover a i {
     will-change: transform;
 }
 
@@ -1179,11 +1224,12 @@ nav .main-nav li i {
     font-size: 150%;
     -webkit-transition: all 0.3s cubic-bezier(.75, .92, 0, 0);
     transition: all 0.3s cubic-bezier(.75, .92, 0, 0);
-    
-    background: #3a6186;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #89253e, #3a6186);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #89253e, #3a6186); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    
+    background: #3a6186;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #89253e, #3a6186);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #89253e, #3a6186);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 /*hover effect of icons in navbar */
@@ -1204,10 +1250,10 @@ nav .main-nav li i:hover {
 .nav-title {
     display: block;
     margin: 5px auto;
-    font-weight: 300;
+    font-weight: 500;
     color: black;
     /* text-shadow: 0 1px 0 rgb(204, 204, 204), 0 2px 0 rgb(201, 201, 201), 0 1px 0 rgb(187, 187, 187), 0 1px 0 rgb(185, 185, 185), 0 1px 0 rgb(170, 170, 170), 0 1px 1px rgba(0, 0, 0, 0.0980392), 0 0 1px rgba(0, 0, 0, 0.0980392), 0 1px 1px rgba(0, 0, 0, 0.298039), 0 1px 1px rgba(0, 0, 0, 0.2), 0 1px 1px rgba(0, 0, 0, 0.247059), 0 1px 1px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.14902); */
-    font: normal 10px/normal "Passero One", Helvetica, sans-serif;
+    font-size:12px;
 }
 
 /* text on navbar */
@@ -1405,7 +1451,7 @@ nav .main-nav a:hover, nav .main-nav a:active {
     width: 100%;
     text-transform: capitalize;
     overflow: hidden;
-    text-align:center;
+    text-align: center;
     background-color: white;
     -webkit-transition: all 0.3s;
     transition: all 0.3s;
@@ -1414,18 +1460,19 @@ nav .main-nav a:hover, nav .main-nav a:active {
     color: rgb(255, 255, 255) !important;
 }
 
-#options li a i{
+#options li a i {
     font-size: 200%;
-    color:white;
+    color: white;
     /* margin-right: 5px; */
     /* float:left; */
     display: block;
     pointer-events: none;
 }
 
-#options li{ 
+#options li {
     transition: all 0.3s;
 }
+
 #options li :hover {
     opacity: 0.8;
 }
@@ -1449,18 +1496,16 @@ nav .main-nav a:hover, nav .main-nav a:active {
 @keyframes load-cube {
     0% {
         /* -webkit-transform-origin: 0px 0px -1500px; */
-        transform-origin: center center ;
+        transform-origin: center center;
         /* -webkit-transform: rotateX(-50deg); */
-        transform: scale(-0.2)   rotateX(-0deg);
+        transform: scale(-0.2) rotateX(-0deg);
         /* will-change: transform; */
-
     }
     90% {
         /* -webkit-transform:rotateY(0deg) scale(1); */
-        transform: scale(1)    rotateX(-360deg);
+        transform: scale(1) rotateX(-360deg);
     }
-} 
-
+}
 
 /* @keyframes load-cube {
     0% {
@@ -1505,6 +1550,7 @@ nav .main-nav a:hover, nav .main-nav a:active {
     animation: 5s cubic-bezier(.32, -0.01, .59, .95) 0s 1 load-cube;
     /* animation: 1s cubic-bezier(.32,-0.01,.59,.95) 0s 1 load-cube; */
 }
+
 /*-------------------------end of What we do-------------------------*/
 
 /*------------------------------------------*/
@@ -1604,28 +1650,30 @@ canvas {
     bottom: 0;
     z-index: -10;
 }
-.title-with-subs h3:after{
+
+.title-with-subs h3:after {
     content: '\261e';
     /* display: inline-block; */
-    display:block;
+    display: block;
     font-size: 50px;
     /* float: right; */
-    padding-right:20px; 
+    padding-right: 20px;
     text-shadow: none;
 }
-.title-with-subs h3{
+
+.title-with-subs h3 {
     cursor: pointer;
     padding: 5px;
     font-weight: bold;
-    
 }
-.title-with-subs .box{
+
+.title-with-subs .box {
     width: 100%;
     padding: 15px;
     cursor: pointer;
 }
 
-.title-with-subs ul{
+.title-with-subs ul {
     display: none;
     /* padding: 10px 10px; */
     margin: 0 auto;
@@ -1635,7 +1683,7 @@ canvas {
     height: auto;
 }
 
-.title-with-subs ul li{
+.title-with-subs ul li {
     list-style: none;
     padding: 5px;
     transition: 0.3s all;
@@ -1644,33 +1692,81 @@ canvas {
     will-change: transform;
 }
 
-.title-with-subs ul li:hover{
+.title-with-subs ul li:hover {
     transform: scale(1.02);
 }
 
-.icon-with-text{
+.icon-with-text {
     display: table;
     max-width: 100%;
-    margin-top:10px;
+    margin-top: 10px;
     margin-bottom: 10px;
 }
 
-.icon-with-text i{
+.icon-with-text i {
     display: table-cell;
     vertical-align: middle;
     padding-right: 10px;
     font-size: 300% !important;
 }
-.icon-with-text i:before{
+
+.icon-with-text i:before {
     content: "\261B";
 }
 
-.icon-with-text span{
+.icon-with-text span {
     display: table-cell;
     vertical-align: middle;
     text-align: left;
     font-weight: 600;
     font-size: 15px;
-    
-
 }
+
+/* on Shore highlight */
+.highlight{
+    display: inline-block;
+    font-weight: 600;
+    will-change: transform;
+    animation:1.5s  0s 1000000 rubberBand;
+}
+/* @-webkit-keyframes rubberBand {
+    50% {
+        color:#0501f8;
+    }
+}
+
+@keyframes rubberBand {
+    50% {
+        color:#0501f8;
+    }
+} */
+@keyframes rubberBand {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+  
+    30% {
+      transform: scale3d(1.25, 0.75, 1);
+    }
+  
+    40% {
+      transform: scale3d(0.75, 1.25, 1);
+    }
+  
+    50% {
+      transform: scale3d(1.15, 0.85, 1);
+    }
+  
+    65% {
+      transform: scale3d(.95, 1.05, 1);
+    }
+  
+    75% {
+      transform: scale3d(1.05, .95, 1);
+    }
+  
+    to {
+      transform: scale3d(1, 1, 1);
+    }
+  }
+  

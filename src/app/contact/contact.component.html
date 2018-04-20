@@ -41,7 +41,7 @@
             <form (ngSubmit)="onSend(f)" #f="ngForm">
 
               <div>
-                <label for="first-name">*FirstName</label>
+                <label for="first-name">FirstName</label>
                 <!-- <span class="error" *ngIf="!fName.valid && fName.touched">Please fill First Name</span> -->
                 <br>
                 <input type="text" name="first-name" placeholder="First name" ngModel required #fName="ngModel">
@@ -49,32 +49,33 @@
               </div>
 
               <div>
-                <label for="last-name">*LastName</label>
+                <label for="last-name">LastName</label>
                 <!-- <span class="error" *ngIf="!fLastName.valid && fLastName.touched">Please fill Last Name</span> -->
                 <br>
                 <input type="text" name="last-name" placeholder="Last name" ngModel required #fLastName="ngModel">
               </div>
 
               <div>
-                <label for="e-mail">*Email</label>
+                <label for="e-mail">Email</label>
                 <span class="error" *ngIf="!fEmail.valid && fEmail.touched">Please fill in correct Email</span>
                 <br>
                 <input type="text" name="e-mail" placeholder="Business Email" ngModel email required #fEmail="ngModel">
               </div>
 
               <div class="textarea-container">
-                <label for="text">*What are you interested in?</label>
+                <label for="text">What are you interested in?</label>
                 <!-- <span class="error" *ngIf="!fText.valid && fText.touched">Please fill in your questions</span> -->
                 <br>
                 <textarea placeholder="What are you interested in?" name="text" ngModel required #fText="ngModel"></textarea>
               </div>
               <!-- <input class="send-btn" type="submit"> -->
-              <button class="send-btn" type="submit" >Send</button>
+              <button class="send-btn" type="submit">Send</button>
             </form>
-            
+
             <h3 *ngIf="submited;else notSent">
               <i class="ion-ios-checkmark-outline" style="color:green;font-size:200%"></i>
-              <br>Thank you<br>Email has been sent
+              <br>Thank you
+              <br>Email has been sent
             </h3>
             <ng-template #notSent>
               <h3 *ngIf="submited">
@@ -114,7 +115,7 @@
                 <h3>Corporate Office</h3>
                 <ul>
                   <p>
-                    704 N. King St
+                    Delaware 704 N. King St
                     <br> Wilmington, DE 19801
                     <br> Phone: 302-510-8214
                     <br> Fax: 908-847-0395
@@ -126,80 +127,69 @@
                 <h3>Disaster recovery center</h3>
                 <ul>
                   <p>
-                    PENNSYLVANIA
+                    Pennsylvania
                     <br> 1456 Ferry road, #603
                     <br> Doylestown PA 18901
-                    <br> NEW JERSEY
-                    <br> 65 Highway Rt 173
+                    <br>NEW JERSEY
+                    <br> 65 Highway Rt. 173
                     <br> Clinton, NJ 08809
                   </p>
                 </ul>
               </div>
-              <!-- <div class="box">
-                <h3>Regional Offices</h3>
-                <ul>
-                  <p>
-                    CALIFORNIA
-                    <br> NORTH CAROLINA
-                  </p>
-                </ul>
-              </div> -->
             </div>
           </div>
 
           <div class="row boxes title-with-subs">
             <div class="box">
-              <h3>Poland</h3>
-              <div id="map-poland-office" class="map"></div>
-              <ul>
-                <p>Skłodowskiej-Curie 18-20
-                  <br> 50-381 Wrocław
-                  <br> E-mail :alphapoland@alphait.us
-                </p>
-              </ul>
-            </div>
-            <div class="box">
-              <h3>Poland</h3>
-              <div id="map-poland-office-2" class="map"></div>
-              <ul>
-                <p>Warsaw
-                  <br> Q22
-                  <br> Jana pawla 2
-                  <br> E-mail :alphapoland@alphait.us
-                </p>
-              </ul>
-            </div>
-            <div class="box">
               <h3>India</h3>
-              <div id="map-india-office" class="map"></div>
+              <!-- <div id="map-india-office" class="map"></div> -->
               <ul>
                 <p>
                   Plot no. ITC-15,
                   <br>IT Park,
                   <br>Sector 67,
                   <br>Mohali 160062
-                  <br> Phone: +91-0172- 506 3856
-                  <br> E-mail :- alphaindia@alphait.us
                 </p>
               </ul>
             </div>
-            <div class="box ">
-              <h3>Georgia</h3>
-              <div id="map-georgia-office" class="map"></div>
+            <div class="box">
+              <h3>Poland</h3>
+              <!-- <div id="map-poland-office" class="map"></div> -->
               <ul>
                 <p>
-                  ALPHA HOLDING GEORGIA
+                  Sklodowskiej-Curie 18-20
+                  <br> 50-381 Wroclaw
+                  <br> E-mail: alphapoland@alphait.us
+                </p>
+              </ul>
+            </div>
+            <div class="box">
+              <h3>Poland</h3>
+              <!-- <div id="map-poland-office-2" class="map"></div> -->
+              <ul>
+                <p>Warsaw
+                  <br> Q22
+                  <br> Jana pawla 2
+                  <br> E-mail: alphapoland@alphait.us
+                </p>
+              </ul>
+            </div>
+            <div class="box">
+              <h3>Georgia</h3>
+              <!-- <div id="map-georgia-office" class="map"></div> -->
+              <ul>
+                <p>
+                  Alpha Holding Georgia
                   <br> Tskneti Highway N7
                   <br> Tbilisi -0162, Georgia
-                  <br> Office: +995 597916587
+                  <br> Office: +995 568884729
                   <br> E-mail :info@alphaholding.ge
                 </p>
               </ul>
             </div>
-
             <div class="box">
               <h3>United Kingdom</h3>
-              <div id="map-london-office" class="map"></div>
+              <!-- <div id="map-london-office" class="map"></div> -->
               <ul>
                 <p>
                   Alpha HighQuest
@@ -209,10 +199,9 @@
                 </p>
               </ul>
             </div>
-
             <div class="box ">
               <h3>Switzerland</h3>
-              <div id="map-switzerland-office" class="map"></div>
+              <!-- <div id="map-switzerland-office" class="map"></div> -->
               <ul>
                 <p>
                   Alpha Highquest GmbH
@@ -232,10 +221,11 @@
         <section id="work-with-us">
           <h2>Work With Us?</h2>
           <div class="row">
-            <p class="box">
+            <div class="box">
               Career Opportunities With Alpha Technologies Inc.
-              <br> Please send us a cover letter & resume outlining your job skills, employment history & educational background.
-              We will contact if there is any suitable opening for you.</p>
+              <br> Please send us a cover letter and resume outlining your job skills, employment history and educational background.
+              We will contact if there is any suitable opening for you.
+            </div>
             <a href="mailto:navita@alphait.us?cc=jack@alphait.us&subject=Resume%20From%20Alphait.us&body=Resume submitted from alphait.us website"
               class="larg-link">Send your resume now</a>
           </div>

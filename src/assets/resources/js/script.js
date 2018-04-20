@@ -60,7 +60,9 @@ $(document).ready(function () {
 
 
     // load immages after first load in 15 secconds
-    setTimeout(function () { loadImmages() }, 8000);
+    setTimeout(function () { 
+        loadImmages();
+    }, 8000);
 
 
 

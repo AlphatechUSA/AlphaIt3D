@@ -29,7 +29,7 @@ form input{
 }
 /*containers for input and label */
 form div{
-    margin: 0px 1%;
+    margin: 5px 1%;
     width: 90%;
     display: inline-block;
 }
@@ -37,10 +37,10 @@ form div{
 /*label for inputs*/
 form label,.error{
     padding-left: 10px;
-    font-size: 80%;
+    font-size: 100%;
     padding-bottom: 5px;
     float: left;
-    font-weight: 300;
+    font-weight: 500;
     color: white;
 }
 .error{

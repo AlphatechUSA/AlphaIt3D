@@ -129,6 +129,9 @@
         margin: 0 auto;
     }
     /*icon of what we do section(immage is inside i tag)*/
+    #what-we-do h3 {
+        color: white;
+    }
     #what-we-do i {
         font-size: 400%;
     }
@@ -170,8 +173,12 @@
         list-style: none;
         margin-top: 10px;
         display: table;
+        font-size: 120%;
     }
     /*icons within methodology section*/
+    #methodology i ,#methodology ul i{
+        color: #870000;
+    }
     #methodology ul i {
         display: table-cell;
         font-size: 20px;

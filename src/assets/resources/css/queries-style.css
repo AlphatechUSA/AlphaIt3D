@@ -317,13 +317,14 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
     #navbar {
         padding: 0px 0px;
     }
+    /*---navbar---*/
     .main-nav {
         display: none;
-        opacity: 0.99;
+        float: right;
         width: 100%;
         margin-top: 0px;
         background-color: white;
-        padding: 50px 0px;
+        padding: 10px 0px;
         text-align: center;
         -webkit-box-shadow: 5px 5px 20px #989898;
         box-shadow: 5px 5px 20px #989898;
@@ -384,16 +385,6 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         font-size: 70%;
     }
     /*--------end of Logo---------*/
-    /*--------navbar--------*/
-    .main-nav {
-        display: none;
-        width: 100%;
-        margin-top: 0px;
-        background-color: white;
-        text-align: center;
-        -webkit-box-shadow: 5px 5px 20px #989898;
-        box-shadow: 5px 5px 20px #989898;
-    }
     /*Icons in navbar*/
     nav .main-nav li i {
         width: 90px;
@@ -635,17 +626,6 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         -webkit-transform-origin: -90px 200px 0px;
         transform-origin: -90px 200px 0px;
     }
-    /*---navbar---*/
-    .main-nav {
-        display: none;
-        width: 100%;
-        margin-top: 0px;
-        background-color: white;
-        padding: 10px 0px;
-        text-align: center;
-        -webkit-box-shadow: 5px 5px 20px #989898;
-        box-shadow: 5px 5px 20px #989898;
-    }
     /*Icons in navbar*/
     nav .main-nav li i {
         width: 90px;
@@ -664,7 +644,6 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         margin-right: 25px;
     }
     /*--------end of navbar--------*/
-    
 }
 
 @media only screen and (max-width: 375px) {
@@ -771,17 +750,6 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         font-size: 60%;
     }
     /*---end of Logo---*/
-    /*---navbar---*/
-    .main-nav {
-        display: none;
-        width: 100%;
-        margin-top: 0px;
-        background-color: white;
-        padding: 10px 0px;
-        text-align: center;
-        -webkit-box-shadow: 5px 5px 20px #989898;
-        box-shadow: 5px 5px 20px #989898;
-    }
     /*Icons in navbar*/
     nav .main-nav li i {
         width: 90px;
