@@ -53,18 +53,20 @@ $(document).ready(function () {
 
 
     // load cube after 2 seconds 
-    // setTimeout(function () {
     $("#cube").addClass("load-cube");
     $("#cube").css("opacity", "1");
-    // }, 5000);
-
 
     // load immages after first load in 15 secconds
     setTimeout(function () { 
         loadImmages();
     }, 8000);
-
-
+    
+    setTimeout(function () { 
+        $("nav").show();
+    }, 5000);
+    setTimeout(function () { 
+        $("nav").css("opacity","1");
+    }, 6000);
 
     // controls navbar
     var icon = $('.js--mobile-nav-icon i');

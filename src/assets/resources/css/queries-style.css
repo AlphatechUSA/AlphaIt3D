@@ -247,7 +247,7 @@ Section-(means Sections styles inside this block,which are inside "Page" page)
         -webkit-transform: translateZ( -275px);
         transform: translateZ( -275px);
         -webkit-transform-origin: 0px 275px 0px;
-        transform-origin: 0px 275px 0px;
+        transform-origin: 0px 275px 0px; 
     }
     #cube.show-back {
         -webkit-transform: translateZ( -275px) rotateX( 180deg);
