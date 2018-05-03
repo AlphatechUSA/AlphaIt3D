@@ -68,11 +68,7 @@ export class GalleryComponent extends RipConfigure implements OnInit {
           'assets/resources/img/gallery/Alpha-Technologies-USA-Inc-Global-HQ-Wilmington-DE-USA/DE-office-3.jpg',
           'assets/resources/img/gallery/Alpha-Technologies-USA-Inc-Global-HQ-Wilmington-DE-USA/DE-office-5.jpg'
         ]),
-        new GalleryFolder("assets/resources/img/gallery/Alpha-Technologies-Poland-Office/Poland-Office-1.jpg", "Alpha Technologies - Poland Office", [
-          'assets/resources/img/gallery/Alpha-Technologies-Poland-Office/Poland-Office-1.jpg',
-          'assets/resources/img/gallery/Alpha-Technologies-Poland-Office/Poland-Office2.jpg'
-        ]),
-        new GalleryFolder("assets/resources/img/gallery/Upcoming-Office-in-Poland/Poland-2.JPG", "Upcoming Office in Poland", [
+        new GalleryFolder("assets/resources/img/gallery/Upcoming-Office-in-Poland/Poland-2.JPG", "Office in Poland", [
           'assets/resources/img/gallery/Upcoming-Office-in-Poland/Poland-2.JPG',
           'assets/resources/img/gallery/Upcoming-Office-in-Poland/Poland1.JPG'
         ]),

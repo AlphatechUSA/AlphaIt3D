@@ -37,7 +37,7 @@
     /* text inside folder box*/
     .immage-boxes .box span {
         display: inline-block;
-        float: left;
+        float: right!important;
         transform: translateY(-10px);
         color: white;
     }
@@ -45,13 +45,16 @@
         color: white;
     }
 
+    .back-btn{
+        display: block;
+    }
     .back-to-folders {
         /*    position: fixed;*/
-        display: block;
-        float: none;
+        display: inline-block;
+        float:right;
+        background-color: #185a9d;
         text-align: center;
         padding: 10px;
-        background-color: blue;
         color: white;
         font-size: 15px;
         font-weight: 300;

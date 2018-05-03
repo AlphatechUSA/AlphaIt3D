@@ -20,12 +20,12 @@
 .slick-next
 {
     font-size: 0;
+    font-weight: 600;
     line-height: 0;
 
     position: absolute;
-    top: 50%;
+    top: 0%;
 
-    display: block;
 
     width: 40px;
     height: 40px;
@@ -70,10 +70,12 @@
 {
     font-family: 'slick';
     font-size: 40px;
+    font-weight: 600;
     line-height: 1;
 
     opacity: 1;
-    color: white;
+    color: red;
+    background-color: black;
 
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;

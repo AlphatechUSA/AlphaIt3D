@@ -5,9 +5,7 @@ import { RipConfigure } from '../Model/RipConfigure';
 @Component({
   selector: 'app-talent-acquisition',
   templateUrl: './talent-acquisition.component.html',
-  styleUrls: ['./talent-acquisition.component.css'],
-  animations: [routerTransition()],
-  host: {'[@routerTransition]': ''}
+  styleUrls: ['./talent-acquisition.component.css']
 })
 export class TalentAcquisitionComponent extends RipConfigure implements OnInit {
 

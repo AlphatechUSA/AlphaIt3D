@@ -1,8 +1,9 @@
 $('.ripslider').slick({
-  dots: true,
-  infinite: true,
+  dots: false,
+  infinite: false,
   slidesToShow: 1,
-  adaptiveHeight: true,
+  slidesToScroll: 1,
+  adaptiveHeight: false,
   autoplay: true,
   autoplaySpeed: 2000,
 });

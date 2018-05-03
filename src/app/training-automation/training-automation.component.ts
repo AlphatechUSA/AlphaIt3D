@@ -5,9 +5,7 @@ import { RipConfigure } from '../Model/RipConfigure';
 @Component({
   selector: 'app-training-automation',
   templateUrl: './training-automation.component.html',
-  styleUrls: ['./training-automation.component.css'],
-  animations: [routerTransition()],
-  host: {'[@routerTransition]': ''}
+  styleUrls: ['./training-automation.component.css']
 })
 export class TrainingAutomationComponent extends RipConfigure implements OnInit {
 

@@ -135,13 +135,6 @@
     #what-we-do i {
         font-size: 400%;
     }
-    /*what we do box container*/
-    #what-we-do .box {
-        /* min-height: 200px; */
-        width: 90%;
-        /* margin-top: 20px; */
-        /* padding: 0px 15px; */
-    }
     /*--------end of What-We-Do Section--------*/
     /*--------Partners--------*/
     /*immages in partners section*/
@@ -175,9 +168,8 @@
         display: table;
         font-size: 120%;
     }
-    /*icons within methodology section*/
-    #methodology i ,#methodology ul i{
-        color: #870000;
+    #methodology ul li:before {
+        display: none;
     }
     #methodology ul i {
         display: table-cell;
@@ -312,6 +304,9 @@
 @media only screen and (max-width: 375px) {
     .rip-video-container div {
         float: none;
+    }
+    #methodology ul {
+        width: 90%;
     }
 }
 

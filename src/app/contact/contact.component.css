@@ -143,8 +143,7 @@ textarea{
 }
 
 /*box-es in location section*/
-#our-locations .box{ 
-    background-color: white;
+#our-locations .box{
     margin:10px 0px;
     border-radius: 20px;
     border: 1px solid #cecece;

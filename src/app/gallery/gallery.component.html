@@ -28,14 +28,11 @@
 
             <!---Front side-->
             <div id="front" class="front side">
-                <section>
-                    <app-folders *ngIf="showFolders;else slider" [gallery]="gallery.gallery" (folderClick)="showSlider($event)"> </app-folders>
-                    <ng-template #slider>
-                        <app-slider [galleryFolder]="getFolderToShow()" (backToFolders)="showAllFolders()">
-
-                        </app-slider>
-                    </ng-template>
-                </section>
+                <app-folders *ngIf="showFolders;else slider" [gallery]="gallery.gallery" (folderClick)="showSlider($event)"> </app-folders>
+                <ng-template #slider>
+                    <app-slider [galleryFolder]="getFolderToShow()" (backToFolders)="showAllFolders()">
+                    </app-slider>
+                </ng-template>
             </div>
             <!---Back side-->
             <div id="back" class="back side">
