@@ -68,9 +68,23 @@ export class GalleryComponent extends RipConfigure implements OnInit {
           'assets/resources/img/gallery/Alpha-Technologies-USA-Inc-Global-HQ-Wilmington-DE-USA/DE-office-3.jpg',
           'assets/resources/img/gallery/Alpha-Technologies-USA-Inc-Global-HQ-Wilmington-DE-USA/DE-office-5.jpg'
         ]),
-        new GalleryFolder("assets/resources/img/gallery/Upcoming-Office-in-Poland/Poland-2.JPG", "Office in Poland", [
-          'assets/resources/img/gallery/Upcoming-Office-in-Poland/Poland-2.JPG',
-          'assets/resources/img/gallery/Upcoming-Office-in-Poland/Poland1.JPG'
+        new GalleryFolder("assets/resources/img/gallery/Upcoming-Office-in-Poland/1.jpg", "Office in Poland", [
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/1.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/2.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/3.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/4.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/5.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/6.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/7.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/8.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/9.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/10.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/11.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/12.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/13.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/14.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/15.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-Poland/16.jpg',
         ]),
         new GalleryFolder("assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/India-Office-3.JPG", "Upcoming Office in India - Site Under Construction", [
           'assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/India-Office-3.JPG',

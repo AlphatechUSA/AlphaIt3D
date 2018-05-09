@@ -38,6 +38,16 @@
           <div class="row">
             <h2>Send us a message</h2>
             <h4 style="color:red" *ngIf="!f.valid && sendClicked">Please fill in all fileds</h4>
+            <h3 *ngIf="submited;else notSent">
+              <i class="ion-ios-checkmark-outline" style="color:green;font-size:200%"></i>
+              <br>Thank you
+              <br>Email has been sent
+            </h3>
+            <ng-template #notSent>
+              <h3 *ngIf="submited">
+                <i class="ion-ios-close-outline" style="color:red;font-size:200%"></i>
+                <br>Sorry Mail was not Sent :(</h3>
+            </ng-template>
             <form (ngSubmit)="onSend(f)" #f="ngForm">
 
               <div>
@@ -71,17 +81,6 @@
               <!-- <input class="send-btn" type="submit"> -->
               <button class="send-btn" type="submit">Send</button>
             </form>
-
-            <h3 *ngIf="submited;else notSent">
-              <i class="ion-ios-checkmark-outline" style="color:green;font-size:200%"></i>
-              <br>Thank you
-              <br>Email has been sent
-            </h3>
-            <ng-template #notSent>
-              <h3 *ngIf="submited">
-                <i class="ion-ios-close-outline" style="color:red;font-size:200%"></i>
-                <br>Sorry Mail was not Sent :(</h3>
-            </ng-template>
           </div>
         </section>
         <!---end of Contact_Form Section-->
@@ -91,11 +90,12 @@
       <div id="back" class="back side">
         <!---Join_Team Section-->
         <section id="join-team">
-          <h2>Interested In Joining Our Team?</h2>>
+          <h2>Interested In Joining Our Team?</h2>
           <div class="row">
             <a class="larg-link">Email info@alphait.us</a>
-            <!-- <span class="join-team-or">or</span>
-            <a class="larg-link">Explore Our Career Openings</a> -->
+          </div>
+          <div class="info-img box">
+            <img src="/assets/resources/img/pics/career.jpg">
           </div>
         </section>
         <!---end of Join_Team Section-->
@@ -110,12 +110,12 @@
 
           <div class="row">
             <div class="large-box boxes title-with-subs">
-              <div id="map-head-office" class="map"></div>
+              <!-- <div id="map-head-office" class="map"></div> -->
               <div class="box">
-                <h3>Corporate Office</h3>
+                <h3>US Corporate Office Delaware</h3>
                 <ul>
                   <p>
-                    Delaware 704 N. King St
+                    704 N. King St
                     <br> Wilmington, DE 19801
                     <br> Phone: 302-510-8214
                     <br> Fax: 908-847-0395
@@ -124,7 +124,7 @@
               </div>
 
               <div class="box">
-                <h3>Disaster recovery center</h3>
+                <h3>Sales Offices</h3>
                 <ul>
                   <p>
                     Pennsylvania
@@ -145,7 +145,7 @@
               <!-- <div id="map-india-office" class="map"></div> -->
               <ul>
                 <p>
-                  Plot no. ITC-15,
+                  Building no. ITC-15,
                   <br>IT Park,
                   <br>Sector 67,
                   <br>Mohali 160062
@@ -228,6 +228,9 @@
             </div>
             <a href="mailto:navita@alphait.us?cc=jack@alphait.us&subject=Resume%20From%20Alphait.us&body=Resume submitted from alphait.us website"
               class="larg-link">Send your resume now</a>
+          </div>
+          <div class="info-img box">
+            <img src="/assets/resources/img/pics/career.jpg">
           </div>
         </section>
         <!---end of Work_with_us Section-->

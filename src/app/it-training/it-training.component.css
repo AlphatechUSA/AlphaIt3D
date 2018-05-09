@@ -1,0 +1,21 @@
+#key-benefits .box,#our-automation .box {
+    padding: 35px;
+}
+
+#sample-of-courses .options {
+    margin: 50px;
+}
+
+#tiers .box{
+    margin: 5px 0px;
+}
+@media only screen and (max-width: 1440px) {
+    #sample-of-courses .options {
+        margin: 0px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    #key-benefits .box,#our-automation .box {
+        padding: 15px;
+    }
+}

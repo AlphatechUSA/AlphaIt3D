@@ -28,7 +28,7 @@
 }
 
 #threed-cube {
-    margin-top: 110px;
+    margin-top: 105px;
     padding: 0;
     left: 0;
     height: 100%;
@@ -102,7 +102,8 @@
     /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0,0.1)); */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    border:2px solid #870000;
+    border:10px outset #870000;
+    box-sizing: content-box;
     /* border:18px  outset  #414141; */
 }
 

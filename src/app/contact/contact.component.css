@@ -1,14 +1,17 @@
 /*******************Contact styles*******************/
 
 /*--------Form Section--------*/
+
 /*Mail Form Section(includes bgcolor,form)*/
+
 #contact {
-    background:linear-gradient(rgba(0, 0, 0,0.6), rgba(0,0,0, 0.6)) ,url(/assets/resources/img/pics/contact-us.jpeg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/resources/img/pics/contact-us.jpg);
     background-size: cover;
 }
 
 /*mail form*/
-form{
+
+form {
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -17,7 +20,8 @@ form{
 }
 
 /*inputs inside form */
-form input{
+
+form input {
     float: left;
     width: 100%;
     height: 10px;
@@ -27,15 +31,18 @@ form input{
     font-size: 100%;
     border: 1px solid #006FA1;
 }
+
 /*containers for input and label */
-form div{
+
+form div {
     margin: 5px 1%;
     width: 90%;
     display: inline-block;
 }
 
 /*label for inputs*/
-form label,.error{
+
+form label, .error {
     padding-left: 10px;
     font-size: 100%;
     padding-bottom: 5px;
@@ -43,12 +50,15 @@ form label,.error{
     font-weight: 500;
     color: white;
 }
-.error{
+
+.error {
     font-weight: 600;
     color: red!important;
 }
+
 /*container,row of label and input containers(There is 2 inout in one line,in one filedset)*/
-fieldset{
+
+fieldset {
     width: 100%;
     display: inline-block;
     margin: 0 auto;
@@ -57,16 +67,15 @@ fieldset{
     text-align: center;
 }
 
-
 /*container for texarea and its label*/
-.textarea-container{
-    margin-top: 30px;
-    margin-bottom: 30px;
-    width: 82%;
+
+.textarea-container {
+    margin-top: 30px !important;
 }
 
 /*textarea of form*/
-textarea{
+
+textarea {
     padding: 10px;
     display: inline-block;
     width: 100%;
@@ -79,10 +88,15 @@ textarea{
 }
 
 /*send button of form*/
-.send-btn:disabled{
+
+.send-btn:disabled {
     background-color: grey;
 }
-.send-btn{
+
+.send-btn:hover {
+    background-color: rgb(0, 176, 255);
+}
+.send-btn {
     display: block;
     float: none;
     margin: 5px auto;
@@ -92,14 +106,22 @@ textarea{
     color: white;
     padding: 10px;
     border-radius: 10px;
-    transition: all 1.3s cubic-bezier(.75,.92,0,0);
+    transition: all 1.3s cubic-bezier(.75, .92, 0, 0);
     cursor: pointer;
 }
+
 /*--------end of Form Section--------*/
 
 /*--------Join-Team Section--------*/
+
+#join-team {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/resources/img/pics/career.jpg); */
+    /* background-size: contain; */
+}
+
 /*"or" text */
-.join-team-or{
+
+.join-team-or {
     display: block;
     margin: 0 auto;
     text-align: center;
@@ -108,14 +130,16 @@ textarea{
     margin-left: 20px;
     margin-right: 20px;
 }
+
 /*--------end of Join-Team Section--------*/
 
 /*--------Our-Location Section--------*/
+
 /*locations section*/
 
-
 /* large box for head office info */
-.large-box{
+
+.large-box {
     width: 100%;
     display: inline-block;
     overflow: hidden;
@@ -133,18 +157,20 @@ textarea{
 } */
 
 /* container for box-es in our-location section (georgia,india,poland) */
-#our-locations .boxes{
+
+#our-locations .boxes {
     margin-top: 50px;
     display: block;
     margin: 0 auto;
     width: 100%;
-/*    display: inline-block;*/
+    /*    display: inline-block;*/
     /* overflow: hidden; */
 }
 
 /*box-es in location section*/
-#our-locations .box{
-    margin:10px 0px;
+
+#our-locations .box {
+    margin: 10px 0px;
     border-radius: 20px;
     border: 1px solid #cecece;
     vertical-align: top;
@@ -152,37 +178,39 @@ textarea{
     position: relative;
     width: 100%;
 }
+
 /*each office in country*/
-.office-in-country:before{
+
+.office-in-country:before {
     content: " ";
     display: block;
     width: 90%;
     height: 1px;
     background-color: #dbdbdb;
     margin: 20px auto;
-    
 }
-.office-in-country{
+
+.office-in-country {
     margin-top: 10px;
-    
 }
-
-
 
 /*informations,titles in locations box*/
-#our-locations ul li{
+
+#our-locations ul li {
     display: block;
     margin-top: 5px;
 }
 
 /*title in head office line(disaster recovery center)*/
-.location-title{
+
+.location-title {
     display: inline-block;
     font-size: 120%x;
-    color: #006FA1;    
+    color: #006FA1;
 }
 
 /* Coutry names in location box */
+
 .location-country {
     display: inline-block;
     margin: 15px;
@@ -191,14 +219,17 @@ textarea{
 }
 
 /*map container its for all map containers in our-location*/
+
 .map {
     height: 200px;
     margin-bottom: 40px;
     border-radius: 20px;
 }
 
-input.ng-touched.ng-invalid,textarea.ng-touched.ng-invalid{
+input.ng-touched.ng-invalid, textarea.ng-touched.ng-invalid {
     border: 1px solid red;
 }
+
 /*--------end of Our-Location Section--------*/
+
 /*******************end of Contact styles*******************/

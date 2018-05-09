@@ -47,7 +47,7 @@ body {
 
 section {
     padding: 10px 0px;
-    padding-bottom: 50p
+    padding-bottom: 50px;
 }
 
 /*h2 headings style*/
@@ -58,7 +58,7 @@ h2, h3 {
 }
 
 h2 {
-    margin-top: 10px;
+    margin-top: 5px;
     text-align: center;
     text-transform: capitalize;
     cursor: default;
@@ -205,8 +205,8 @@ h4 {
 }
 
 .round-boxes .box {
-    width: 200px;
-    height: 200px;
+    width: 210px;
+    height: 210px;
     display: inline-table;
     border-radius: 50% !important;
 }
@@ -416,14 +416,17 @@ a, li {
     display: block;
     margin: 20px auto;
     padding: 15px;
-    width: 80%;
-    font-size: 100%;
+    width: 90%;
+    font-size: 200%;
+    font-weight: 500;
     color: white;
     border: 1px solid #cecece;
     -webkit-transition: all 1.3s cubic-bezier(.75, .92, 0, 0);
     -o-transition: all 1.3s cubic-bezier(.75, .92, 0, 0);
     transition: all 1.3s cubic-bezier(.75, .92, 0, 0);
     will-change: transform;
+    color: white;
+    text-shadow: 1px 2px 1px #ff0000;
 }
 
 /*effect after hovering larg link*/
@@ -578,6 +581,17 @@ img {
     -o-transition: all 0.3s cubic-bezier(.75, .92, 0, 0);
     transition: all 0.3s cubic-bezier(.75, .92, 0, 0);
 }
+
+.info-img{
+    display: block;
+    text-align: center;
+}
+
+.info-img img{
+    width: 60%;
+    height: auto;
+}
+
 
 /* all immages defaut hovering effect*/
 
@@ -1265,7 +1279,8 @@ canvas {
 
 .title-with-subs h3 {
     cursor: pointer;
-    padding: 5px;
+    padding: 0px;
+    margin: 0;
     font-weight: bold;
 }
 
@@ -1341,4 +1356,30 @@ canvas {
     will-change: transform;
     -webkit-animation: 7s 0s 1000000 zoomIn;
             animation: 7s 0s 1000000 zoomIn;
+}
+
+.back-btn i{
+    font-size: 200%;
+    margin-right: 10px;
+
+}
+.back-btn{
+    position: relative;
+    z-index: 100000000;
+    display: inline-block;
+    float:right;
+    background-color: #185a9d;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 300;
+    border-radius: 20px;
+    margin: 10px;
+    transition: 0.5s all;
+    will-change: transform;
+    cursor: pointer;
+}
+.back-btn:hover {
+    background-color: rgb(0, 176, 255);
 }
