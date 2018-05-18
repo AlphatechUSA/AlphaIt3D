@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { RipConfigure } from '../Model/RipConfigure';
 import { AfterViewInit } from '@angular/core/src/metadata/lifecycle_hooks';
 import 'jquery';
-// import '../../assets/resources/js/step-by-step-boxes.js';
 
 @Component({
   selector: 'app-data-analytics',

@@ -5,7 +5,7 @@
 /*Mail Form Section(includes bgcolor,form)*/
 
 #contact {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/resources/img/pics/contact-us.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../assets/resources/img/pics/contact-us.jpg);
     background-size: cover;
 }
 
@@ -113,11 +113,6 @@ textarea {
 /*--------end of Form Section--------*/
 
 /*--------Join-Team Section--------*/
-
-#join-team {
-    /* background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(/assets/resources/img/pics/career.jpg); */
-    /* background-size: contain; */
-}
 
 /*"or" text */
 
