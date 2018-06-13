@@ -69,25 +69,20 @@
     background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, transparent 100%, rgba(0, 0, 0, 1) 75%, transparent)
 } */
 
-#cube .side section::-webkit-scrollbar
+#cube .side::-webkit-scrollbar
 {
 	width: 10px;
 	background-color: black;
 }
 
-#cube .side section::-webkit-scrollbar-thumb
+#cube .side::-webkit-scrollbar-thumb
 {
 	background-color: white;
 }
 /*end of scroll bar*/
 
-#cube .side section {
+#cube .side{
     position: relative;
-    height: 100%;
-    /* top: 50%;
-    transform: translateY(-50%); */
-    overflow-y: scroll;
-    overflow-x: hidden;
 }
 
 #cube .side {
@@ -105,6 +100,11 @@
     border:10px outset #870000;
     box-sizing: content-box;
     /* border:18px  outset  #414141; */
+    /* overflow-y: scroll;
+    overflow-x: hidden; */
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 #cube .front {
