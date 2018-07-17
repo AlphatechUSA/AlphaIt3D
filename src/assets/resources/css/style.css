@@ -1383,3 +1383,12 @@ canvas {
 .back-btn:hover {
     background-color: rgb(0, 176, 255);
 }
+
+.fps-hider{
+    z-index: 1;
+    width: auto;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+}

@@ -226,5 +226,34 @@ input.ng-touched.ng-invalid, textarea.ng-touched.ng-invalid {
 }
 
 /*--------end of Our-Location Section--------*/
+/*--------Social Links Section--------*/
+.youtube{
+    color:#cd201f;
+}
+.facebook{
+    color:#3b5999;
+}
+.linked-in{
+    color:#0077B5;
+}
+
+.twitter{
+    color: #55acee;
+}
+
+.social-links-container i{
+    font-size: 400%;
+    margin: 10px;    
+    transition: all 1.3s cubic-bezier(.75, .92, 0, 0);
+}
+
+.social-links-container i:hover{
+    color: white;
+}
+
+.info-img-container img{
+    width: 30%;
+    height: auto;
+}
 
 /*******************end of Contact styles*******************/

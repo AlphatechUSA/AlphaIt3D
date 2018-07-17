@@ -36,6 +36,7 @@
 }
 
 #cube {
+    height: 100%;
     position: relative;
     opacity: 0;
     /* opacity: 1; */
@@ -45,45 +46,28 @@
     -webkit-transform-style: preserve-3d;
     /* Says to rowser that this element is in threed and should make transforms i9n 3D*/
     transform-style: preserve-3d;
-    /* -webkit-transition: opacity 10s, -webkit-transform 20s;
-    transition: opacity 10s, -webkit-transform 20s; */
-    /* transition: transform 20s, opacity 10s; */
     transition: transform 2.5s, opacity 1s, -webkit-transform 2.5s;
 }
 
 
+#cube .side section {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
 /*Scroll bar*/
-
-/* #cube .side section::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.6);
-    background-color: #CCCCCC;
-}
-
-#cube .side section::-webkit-scrollbar {
-    width: 10px;
-    background-color: #F5F5F5;
-}
-
-#cube .side section::-webkit-scrollbar-thumb {
-    background-color: #FFF;
-    background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 25%, transparent 100%, rgba(0, 0, 0, 1) 75%, transparent)
-} */
-
-#cube .side::-webkit-scrollbar
+#cube .side section::-webkit-scrollbar
 {
 	width: 10px;
 	background-color: black;
 }
 
-#cube .side::-webkit-scrollbar-thumb
+#cube .side section::-webkit-scrollbar-thumb
 {
 	background-color: white;
 }
 /*end of scroll bar*/
-
-#cube .side{
-    position: relative;
-}
 
 #cube .side {
     display: block;
@@ -94,16 +78,12 @@
     background: -webkit-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
     background: -o-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
     background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
-    /* background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0,0.1)); */
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     border:10px outset #870000;
+    /* border: 2px solid #870000; */
     box-sizing: content-box;
-    /* border:18px  outset  #414141; */
-    /* overflow-y: scroll;
-    overflow-x: hidden; */
     height: 100%;
-    overflow-y: scroll;
     overflow-x: hidden;
 }
 

@@ -1,4 +1,4 @@
-@media only screen and (max-width: 2560px) {
+@media only screen and (max-width: 2561 px) {
     #options {
         left: 10px;
         width: 300px;
@@ -92,7 +92,7 @@
     /*--------end of 3dcube-------*/
 }
 
-@media only screen and (max-width: 1800px) {
+@media only screen and (max-width: 1801px) {
     #options {
         width: 200px;
     }
@@ -180,7 +180,7 @@
     }
 }
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1201px) {
     #cube .side {
         width: 550px;
         height: 550px;
@@ -188,7 +188,7 @@
     }
 }
 
-@media only screen and (max-width: 1440px) {
+@media only screen and (max-width: 1441px) {
     #theArt {
         width: 550px;
         height: 550px;
@@ -266,7 +266,7 @@
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1025px) {
     /*---navbdar---*/
     #navbar {
         padding: 0px 0px;
@@ -287,7 +287,7 @@
     }
     /*--------end of Logo---------*/
     /*---navbdar---*/
-    .back-btn i{
+    .back-btn i {
         font-size: 100%;
     }
     .back-btn {
@@ -338,7 +338,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 769px) {
     /*******************General styles*******************/
     /*--------Navbar--------*/
     nav {
@@ -500,11 +500,11 @@
     }
 }
 
-@media only screen and (max-width: 670px) {
+@media only screen and (max-width: 671px) {
     /*--------3dBox---------*/
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 481px) {
     /*******************General styles*******************/
     .text-with-background {
         padding: 0;
@@ -606,14 +606,13 @@
     }
     .mobile-nav-icon {
         display: inline-block;
-        line-height: 55px;
         font-size: 250%;
         margin-right: 25px;
     }
     /*--------end of navbar--------*/
 }
 
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 376px) {
     /*******************General styles*******************/
     #options li a {
         font-size: 12px;
@@ -742,9 +741,16 @@
         margin-right: 25px;
     }
     /*--------end of navbar--------*/
+    .back-btn {
+        position: absolute;
+        top: 0;
+        left: auto;
+        right: 15%;
+        transform: translateX(0%);
+    }
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 321px) {
     /*--------3dBox---------*/
     #theArt {
         width: 300px;

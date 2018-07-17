@@ -18,9 +18,10 @@
           <a class="show-left">
             <i class="ion-ios-people-outline"></i> Work with us</a>
         </li>
-        <!-- <li>
-            <a class="show-top">Our advantage</a>
-          </li> -->
+        <li>
+          <a class="show-top">
+            <i class="ion-social-facebook-outline"></i>Social Links</a>
+        </li>
         <!-- <li>
             <a class="show-bottom">testimonials</a>
           </li> -->
@@ -46,7 +47,8 @@
             <ng-template #notSent>
               <h3 *ngIf="submited">
                 <i class="ion-ios-close-outline" style="color:red;font-size:200%"></i>
-                <br>Sorry Mail was not Sent :(</h3>
+                <br>Sorry Mail was not Sent :(
+                <br>Please Email Us Directly To Info@Alphait.Us</h3>
             </ng-template>
             <form (ngSubmit)="onSend(f)" #f="ngForm">
 
@@ -239,6 +241,30 @@
       <!---Top side-->
       <div id="top" class="top side">
 
+        <section>
+          <div class="row social-links-container">
+            <h2> Social Links</h2>
+            <a target="_blank" href="D:\sumba\Programming\projects\alphaIt\alphait design">
+              <i class="ion-social-facebook-outline facebook"></i>
+            </a>
+            <a target="_blank" href="https://twitter.com/alphatech1997"> 
+              <i class="ion-social-twitter-outline twitter"></i>
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/company/alpha-technologies-usa-inc">
+              <i class="ion-social-linkedin-outline linked-in"></i>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCKzFLxJQzVyDnNdqy4sHnWw">
+              <i class="ion-social-youtube-outline youtube"></i>
+            </a>
+          </div>
+          <div class="row info-img-container">
+            <h2>certifications</h2>
+            <a target="_blank" href="https://www.dandb.com/verified/business/575447458/">
+              <img src="https://www.dandb.com/verified/images/business/verified_logo.png" alt="verified-img">
+            </a>
+            <img src="assets/resources/img/footer-img.jpg" />
+          </div>
+        </section>
       </div>
       <!---Bottom side-->
       <div id="bottom" class="bottom side">
