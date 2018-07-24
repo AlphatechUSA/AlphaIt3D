@@ -1,0 +1,222 @@
+#show-buttons {
+    text-align: center;
+    top: 80px;
+    z-index: 100000;
+    left: 0;
+    width: 100%;
+}
+
+#theArt {
+    display: block;
+    width: 640px;
+    height: 640px;
+    position: relative;
+    margin: 0px auto;
+    /* Says to browser how in z index (in space) will be shown element's childs
+    In short creates 3d space,with z depth, for childrens
+    */
+    /* -webkit-perspective: 1500px; */
+    -webkit-perspective: 100000px;
+            perspective: 100000px;
+    -webkit-transition: all 1s cubic-bezier(.75, .92, 0, 0);
+    -o-transition: all 1s cubic-bezier(.75, .92, 0, 0);
+    transition: all 1s cubic-bezier(.75, .92, 0, 0);
+    -webkit-transform: translateZ(0);
+    /*transform rom xarisxian shesruldes*/
+    transform: translateZ(0);
+    /*transform rom xarisxian shesruldes*/
+}
+
+#threed-cube {
+    margin-top: 105px;
+    padding: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#cube {
+    height: 100%;
+    position: relative;
+    opacity: 0;
+    /* opacity: 1; */
+    -webkit-transform-origin: center;
+        -ms-transform-origin: center;
+            transform-origin: center;
+    -webkit-transform-style: preserve-3d;
+    /* Says to rowser that this element is in threed and should make transforms i9n 3D*/
+    transform-style: preserve-3d;
+    transition: transform 2.5s, opacity 1s, -webkit-transform 2.5s;
+}
+
+
+#cube .side section {
+    height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/*Scroll bar*/
+#cube .side section::-webkit-scrollbar
+{
+	width: 10px;
+	background-color: black;
+}
+
+#cube .side section::-webkit-scrollbar-thumb
+{
+	background-color: white;
+}
+/*end of scroll bar*/
+
+#cube .side {
+    display: block;
+    position: absolute;
+    z-index: 10000;
+    /* background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(255, 255, 255, 0.4))); */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 0.5)));
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    background: -o-linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    background: linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5));
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border:10px outset #870000;
+    /* border: 2px solid #870000; */
+    box-sizing: content-box;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+#cube .front {
+    -webkit-transform: translateZ( 320px);
+    transform: translateZ( 320px);
+}
+
+#cube .back {
+    -webkit-transform: rotateX( -180deg) translateZ( 320px);
+    transform: rotateX( -180deg) translateZ( 320px);
+}
+
+#cube .right {
+    -webkit-transform: rotateY( 90deg) translateZ( 320px);
+    transform: rotateY( 90deg) translateZ( 320px);
+}
+
+#cube .left {
+    -webkit-transform: rotateY( -90deg) translateZ( 320px);
+    transform: rotateY( -90deg) translateZ( 320px);
+}
+
+#cube .top {
+    -webkit-transform: rotateX( 90deg) translateZ( 320px);
+    transform: rotateX( 90deg) translateZ( 320px);
+}
+
+#cube .bottom {
+    -webkit-transform: rotateX( -90deg) translateZ( 320px);
+    transform: rotateX( -90deg) translateZ( 320px);
+}
+
+
+#cube .show-front {
+    -webkit-transform: translateZ( -320px);
+    transform: translateZ( -320px);
+    -webkit-transform-origin: 0px 320px 0px;
+    -ms-transform-origin: 0px 320px 0px;
+        transform-origin: 0px 320px 0px;
+}
+
+#cube.show-back {
+    -webkit-transform: translateZ( -320px) rotateX( 180deg);
+    transform: translateZ( -320px) rotateX( 180deg);
+    -webkit-transform-origin: 0px 320px 0px;
+    -ms-transform-origin: 0px 320px 0px;
+        transform-origin: 0px 320px 0px;
+}
+
+#cube.show-right {
+    -webkit-transform: translateZ( -320px) rotateY( -90deg);
+    transform: translateZ( -320px) rotateY( -90deg);
+    -webkit-transform-origin: 320px 0px 0px;
+    -ms-transform-origin: 320px 0px 0px;
+        transform-origin: 320px 0px 0px;
+}
+
+#cube.show-left {
+    -webkit-transform: translateZ( -320px) rotateY( 90deg);
+    transform: translateZ( -320px) rotateY( 90deg);
+    -webkit-transform-origin: 320px 0px 0px;
+    -ms-transform-origin: 320px 0px 0px;
+        transform-origin: 320px 0px 0px;
+}
+
+#cube.show-top {
+    -webkit-transform: translateZ( -320px) rotateX( -90deg);
+    transform: translateZ( -320px) rotateX( -90deg);
+    -webkit-transform-origin: 90px 320px 0px;
+    -ms-transform-origin: 90px 320px 0px;
+        transform-origin: 90px 320px 0px;
+}
+
+#cube.show-bottom {
+    -webkit-transform: translateZ( -320px) rotateX( 90deg);
+    transform: translateZ( -320px) rotateX( 90deg);
+    -webkit-transform-origin: -90px 320px 0px;
+    -ms-transform-origin: -90px 320px 0px;
+        transform-origin: -90px 320px 0px;
+}
+#show-buttons .show-front{
+    background: #DCE35B;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #45B649, #DCE35B);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#45B649), to(#DCE35B));
+    background: -webkit-linear-gradient(left, #45B649, #DCE35B);
+    background: -o-linear-gradient(left, #45B649, #DCE35B);
+    background: linear-gradient(to right, #45B649, #DCE35B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #870000;  
+}
+
+#show-buttons .show-back{
+    background: #870000;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #190A05, #870000);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#190A05), to(#870000));
+    background: -webkit-linear-gradient(left, #190A05, #870000);
+    background: -o-linear-gradient(left, #190A05, #870000);
+    background: linear-gradient(to right, #190A05, #870000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #FF8008;
+}
+#show-buttons .show-right{
+    background: #43cea2;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#185a9d), to(#43cea2));
+    background: -webkit-linear-gradient(left, #185a9d, #43cea2);
+    background: -o-linear-gradient(left, #185a9d, #43cea2);
+    background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #403B4A;
+}
+#show-buttons .show-left{
+    background: #403B4A;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #403B4A ,#E7E9BB);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#403B4A) ,to(#E7E9BB));
+    background: -webkit-linear-gradient(left, #403B4A ,#E7E9BB);
+    background: -o-linear-gradient(left, #403B4A ,#E7E9BB);
+    background: linear-gradient(to right, #403B4A ,#E7E9BB); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #003973;
+}
+#show-buttons .show-top{
+    background: #003973;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,  #003973,#E5E5BE);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear,  left top, right top,  from(#003973),to(#E5E5BE));
+    background: -webkit-linear-gradient(left,  #003973,#E5E5BE);
+    background: -o-linear-gradient(left,  #003973,#E5E5BE);
+    background: linear-gradient(to right,  #003973,#E5E5BE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #DCE35B;
+}
+#show-buttons .show-bottom{
+    background: #FF8008;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #FFC837, #FF8008);  /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-gradient(linear, left top, right top, from(#FFC837), to(#FF8008));
+    background: -webkit-linear-gradient(left, #FFC837, #FF8008);
+    background: -o-linear-gradient(left, #FFC837, #FF8008);
+    background: linear-gradient(to right, #FFC837, #FF8008); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /* color: #43cea2;*/
+}

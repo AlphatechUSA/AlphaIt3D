@@ -90,9 +90,15 @@ export class GalleryComponent extends RipConfigure implements OnInit {
           'assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/India-Office-3.JPG',
           'assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/india-Office-4.JPG',
           'assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/India.jpg',
-          'assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/india2.jpg'
+          'assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/india2.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/india2.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/india1.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/india3.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/india4.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/india5.jpg',
+          'assets/resources/img/gallery/Upcoming-Office-in-India-Site-Under-Construction/india6.jpg'
         ]),
-        new GalleryFolder("assets/resources/img/gallery/Upcoming-Building-in-Republic-of-Georgia/AlphaHoolding.jpg", "Building in Georgia", [
+        new GalleryFolder("assets/resources/img/gallery/Upcoming-Building-in-Republic-of-Georgia/AlphaHolding.jpg", "Building in Georgia", [
           'assets/resources/img/gallery/Upcoming-Building-in-Republic-of-Georgia/AlphaHolding.jpg',
           'assets/resources/img/gallery/Upcoming-Building-in-Republic-of-Georgia/AlphaHolding1.JPG',
           'assets/resources/img/gallery/Upcoming-Building-in-Republic-of-Georgia/AlphaHolding2.JPG',
