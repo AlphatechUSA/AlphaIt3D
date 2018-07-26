@@ -26,7 +26,7 @@ export class ContactComponent extends RipConfigure implements OnInit {
   }
 
   onSend(form: NgForm) {
-    form.value.fText
+    // form.value.fText
     this.sendClicked=true;
     if(form.valid){
     this.http.post('https://formspree.io/roma.sumbadze@alphait.us',
