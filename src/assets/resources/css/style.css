@@ -1335,7 +1335,7 @@ canvas {
 
 .icon-with-text i {
     display: table-cell;
-    vertical-align: middle;
+    vertical-align: top;
     padding-right: 10px;
     font-size: 150% !important;
     color: white;

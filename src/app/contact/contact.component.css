@@ -246,6 +246,10 @@ input.ng-touched.ng-invalid, textarea.ng-touched.ng-invalid {
     margin: 10px;    
     transition: all 1.3s cubic-bezier(.75, .92, 0, 0);
 }
+.icon-with-text span {
+    font-weight: 300;
+}
+
 
 .social-links-container i:hover{
     color: white;
@@ -257,3 +261,6 @@ input.ng-touched.ng-invalid, textarea.ng-touched.ng-invalid {
 }
 
 /*******************end of Contact styles*******************/
+.attenetion{
+    color :red;
+}

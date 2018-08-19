@@ -3,6 +3,7 @@ import { routerTransition } from '../Model/cropper';
 import { RipConfigure } from '../Model/RipConfigure';
 import { Http, Response } from '@angular/http';
 import { NgForm } from '@angular/forms';
+
 declare var GMaps: any;
 
 @Component({
@@ -15,32 +16,41 @@ declare var GMaps: any;
 export class ContactComponent extends RipConfigure implements OnInit {
   submited: boolean;
   sendClicked:boolean;
+  hasAnError:boolean;
   
   constructor(private http: Http) {
     super();
     this.submited = false;
+    this.hasAnError=false;
+    this.sendClicked=false;
   }
 
   ngOnInit() {
 
   }
-
+  
   onSend(form: NgForm) {
-    // form.value.fText
     this.sendClicked=true;
     if(form.valid){
-    this.http.post('https://formspree.io/roma.sumbadze@alphait.us',
+      this.http.post('https://dry-shore-67948.herokuapp.com/send_email',
       form.value).subscribe(
       (response: Response) => {
-        form.reset();
         this.submited = true;
-        this.sendClicked=false;
+        setTimeout(()=>this.resetInfo(form),10000);
       },
       (error: Response) => {
-        this.submited=false;
-      }
+        this.hasAnError=true;
+        setTimeout(()=>this.resetInfo(form),10000);
+      } 
       );
     }
+  }
+
+  resetInfo(form:NgForm){
+    this.submited=false;
+    this.sendClicked=false;
+    this.hasAnError=false;
+    form.reset();
   }
 
 }
